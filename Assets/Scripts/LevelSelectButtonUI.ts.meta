@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/cca23390-0c8a-40c1-8b6a-834ef24d40c4>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> ca44e035-ef06-460a-8754-8cea06728047
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> ca44e035-ef06-460a-8754-8cea06728047
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 52ae43fa-29ab-46d8-a3f1-e0e3031fb2c7
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/52ae43fa-29ab-46d8-a3f1-e0e3031fb2c7>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 3545a1e5-c268-4f6f-840d-769d733897f9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    button: false
+    image: false
+    materialBase: false
+    textByText: false
+    textTitle: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - image: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      materialBase: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      button: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      textTitle: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      textByText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.Image image
+    - // @input Asset.Material materialBase
+    - // @input AssignableType button
+    - // @input Component.Text textTitle
+    - // @input Component.Text textByText

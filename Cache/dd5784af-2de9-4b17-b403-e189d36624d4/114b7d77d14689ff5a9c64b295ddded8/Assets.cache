@@ -28,9 +28,6 @@
         Port_GSplatScale_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 0.000000, z: 0.000000}
-        Port_PrevWorldPosition_N004:
-          typeIdx: 4
-          value: {x: 0.000000, y: 0.000000, z: 0.000000}
         Port_RayDirection_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 1.000000, z: 0.000000}
@@ -102,7 +99,7 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: dd5784af-2de9-4b17-b403-e189d36624d4/114b7d77d14689ff5a9c64b295ddded8/Data/5c693aa/highlight_menu Graph.glsl
+      ShaderPath: dd5784af-2de9-4b17-b403-e189d36624d4/114b7d77d14689ff5a9c64b295ddded8/Data/6533ae0/highlight_menu Graph.glsl
       Defines:
         []
       Properties:

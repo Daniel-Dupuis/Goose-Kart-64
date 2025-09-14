@@ -40,9 +40,6 @@
         Port_Normal_N041:
           typeIdx: 4
           value: {x: 0.000000, y: 0.000000, z: 1.000000}
-        Port_PrevWorldPosition_N004:
-          typeIdx: 4
-          value: {x: 0.000000, y: 0.000000, z: 0.000000}
         Port_RayDirection_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 1.000000, z: 0.000000}
@@ -196,7 +193,7 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: 8a82fcca-1642-645c-623c-d07b2e272fb7/a1aef31f742ec50b42da905875147ee7/Data/5c693aa/HandHints_Outline_Glow_Combined.glsl
+      ShaderPath: 8a82fcca-1642-645c-623c-d07b2e272fb7/a1aef31f742ec50b42da905875147ee7/Data/6533ae0/HandHints_Outline_Glow_Combined.glsl
       Defines:
         []
       Properties:

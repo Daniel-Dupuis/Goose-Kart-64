@@ -49,9 +49,6 @@
         Port_LODValue_N082:
           typeIdx: 1
           value: 0.000000
-        Port_PrevWorldPosition_N004:
-          typeIdx: 4
-          value: {x: 0.000000, y: 0.000000, z: 0.000000}
         Port_RayDirection_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 1.000000, z: 0.000000}
@@ -252,7 +249,7 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: 92475f26-800f-4aa1-0b58-2ed31b303f84/d58db8260d9c703cca0e215cc6903392/Data/5c693aa/Toon Body.glsl
+      ShaderPath: 92475f26-800f-4aa1-0b58-2ed31b303f84/d58db8260d9c703cca0e215cc6903392/Data/6533ae0/Toon Body.glsl
       Defines:
         []
       Properties:

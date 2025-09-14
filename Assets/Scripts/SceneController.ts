@@ -51,7 +51,7 @@ export class SceneController extends BaseScriptComponent {
   }
 
   private onStart() {
-    this.startPlacement();
+    //this.startPlacement();
     this.createEvent("UpdateEvent").bind(this.onUpdate.bind(this));
     this.gameController.scanForControllers();
     //register button presses

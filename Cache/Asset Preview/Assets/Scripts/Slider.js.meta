@@ -4,7 +4,7 @@
   ImporterName: JavaScriptAssetImporter
   PrimaryAsset: !<reference> 209b8c76-e430-432a-ba89-7c10472a650a
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -35,7 +35,8 @@
   VersionPatch: 0
   ComponentUid: 0006016f-d2be-52a4-0000-0000000d0ea0
   ExportUid: 0006016f-d5fb-ee66-0000-0000000d4daf
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     camera: false
     color: true

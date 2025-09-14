@@ -6,60 +6,60 @@
   SourceHash: 885ddaa41719f8835861e845a6b88b23
   FileHash: 8fc403ec445cc7bf740481d3eb7c6163
   NativePackageItems:
-    - !<own> 1a5f9235-f7d6-2a10-01c3-1d515225e011
-    - !<own> d4ea7f84-d7cb-e5e0-208b-fcdc17a6a3bc
-    - !<own> 2df084a2-d0e5-3bb0-d76e-3278d1dad356
-    - !<own> e53f6283-70d7-e9a0-5e92-ef0421d8a4e4
-    - !<own> 3b9b5b40-a65c-b0b8-1fa5-36e16de1f288
-    - !<own> e2a58d33-496f-5cb8-9b58-e9474c9d37fa
-    - !<own> 38df44d1-fa1b-d6e6-b259-e6dec32e16dc
-    - !<own> 8a4b77ad-2148-a1c3-95cf-4bf95dfb7a93
-    - !<own> d6bf9bf7-3536-02b1-40b4-afcdfa5b8821
-    - !<own> 71f9cd8c-6c9b-dd5c-ee62-11ff98d68cf5
-    - !<own> 73601326-7660-09ef-cb0f-4041c13960fb
-    - !<own> 93be4698-eebc-b2df-e64d-4f568cdf4f67
-    - !<own> f61cda04-9c5a-6674-4e35-4136a3789606
-    - !<own> 367b3ada-7fca-6d02-0425-02e4742a25a7
-    - !<own> 99c1e3bb-b01c-f45f-9d35-509d6f59450a
-    - !<own> e9394eeb-b3dc-3417-0689-bdce3a89f647
-    - !<own> 5c7259b6-1c8a-f34a-6bb8-5b8c0fe05d2f
-    - !<own> a9ac2b84-65d9-4348-a2ee-ec44818c87be
-    - !<own> 77f669cb-6337-b315-ddde-3dae9191d1d8
-    - !<own> bb50a00a-d669-79a2-0a42-7ade07cb068b
-    - !<own> 40af2c07-f465-0eca-b9c2-2f78abebcfc0
-    - !<own> 18e46741-8c7a-3b6a-dab9-65f65eb189a2
-    - !<own> f6c82705-8fde-7233-b834-0c7c293f0e9a
-    - !<own> a6fff8dc-4a7f-ce1e-15ff-b399767e7db0
-    - !<own> 36eedcd9-4b50-2b8a-e520-d184785f9ff3
-    - !<own> dae9e0bb-f896-e4fe-8b76-e7905ae53ef0
-    - !<own> 3a325245-7cab-317e-118f-18da5064e384
-    - !<own> 9cfc1216-d01e-b05d-101e-ba0ab3b0c4c2
-    - !<own> 11e0212d-ec78-9a36-b0ab-7df6e84f89da
-    - !<own> 4b5d4c1e-f53a-60bd-98bd-1fc0f6e3bfa9
-    - !<own> 72d49739-4234-b95b-6fa7-16049f90001e
-    - !<own> 543574e2-429b-ff3c-3dcb-50305224019f
-    - !<own> 22d1c8a3-0965-5d30-4c77-aff69213e080
-    - !<own> 4ac459ea-8fda-2b49-69c9-2575244f16eb
-    - !<own> 9ec8f200-26da-0d52-2065-8d96038fafdd
-    - !<own> 3af36e30-3bce-48d9-ca44-55ce1e31d5e5
+    - !<own> ad270f2f-b6d6-ee2d-6fef-9123f7e4b539
+    - !<own> 7b48c9de-d2c4-2f4e-ce6b-34306537184f
+    - !<own> 1374e053-1497-fc86-4cc9-cebd3d293635
+    - !<own> 999c348d-4546-4650-77cd-b9a91419f498
+    - !<own> 6283d142-1839-af0f-33c5-748a98de363a
+    - !<own> a3bcf14b-213e-3739-e2e4-23371cb165d1
+    - !<own> 8d0b1bef-db0d-c165-c126-f73083d839da
+    - !<own> 0a222a9d-4c80-ca8e-5d9c-7b02da124eeb
+    - !<own> c1ac7ba9-0427-38c2-4810-23a7cad85ae3
+    - !<own> d8467e14-6234-9e97-209d-6079ab3c172c
+    - !<own> 79d4691e-7a9a-9460-379d-26dfa9587590
+    - !<own> 6f981dfa-633e-b6de-a11d-2f64b75a90e6
     - !<own> 7cdc6cb8-ce36-2cd6-4216-d7087c387a75
     - !<own> 90fba569-d4d3-da0d-e65b-1a2a4d5fe102
     - !<own> 3906cb22-32c3-1c3d-d9b7-553b0c0b4d0a
-    - !<own> 6283d142-1839-af0f-33c5-748a98de363a
-    - !<own> 1374e053-1497-fc86-4cc9-cebd3d293635
-    - !<own> 999c348d-4546-4650-77cd-b9a91419f498
-    - !<own> 7b48c9de-d2c4-2f4e-ce6b-34306537184f
-    - !<own> ad270f2f-b6d6-ee2d-6fef-9123f7e4b539
-    - !<own> a3bcf14b-213e-3739-e2e4-23371cb165d1
-    - !<own> 8d0b1bef-db0d-c165-c126-f73083d839da
-    - !<own> 6f981dfa-633e-b6de-a11d-2f64b75a90e6
-    - !<own> c1ac7ba9-0427-38c2-4810-23a7cad85ae3
-    - !<own> 0a222a9d-4c80-ca8e-5d9c-7b02da124eeb
-    - !<own> 79d4691e-7a9a-9460-379d-26dfa9587590
-    - !<own> d8467e14-6234-9e97-209d-6079ab3c172c
-    - !<own> e867c52c-4617-afe3-e1ae-a9624321720c
-    - !<own> 2b981dfb-e397-577e-a42c-223d42a585d4
+    - !<own> 3af36e30-3bce-48d9-ca44-55ce1e31d5e5
+    - !<own> d4ea7f84-d7cb-e5e0-208b-fcdc17a6a3bc
+    - !<own> 11e0212d-ec78-9a36-b0ab-7df6e84f89da
+    - !<own> 3b9b5b40-a65c-b0b8-1fa5-36e16de1f288
+    - !<own> 18e46741-8c7a-3b6a-dab9-65f65eb189a2
+    - !<own> a6fff8dc-4a7f-ce1e-15ff-b399767e7db0
+    - !<own> 36eedcd9-4b50-2b8a-e520-d184785f9ff3
+    - !<own> f6c82705-8fde-7233-b834-0c7c293f0e9a
+    - !<own> 9cfc1216-d01e-b05d-101e-ba0ab3b0c4c2
+    - !<own> 2df084a2-d0e5-3bb0-d76e-3278d1dad356
+    - !<own> e53f6283-70d7-e9a0-5e92-ef0421d8a4e4
+    - !<own> 4ac459ea-8fda-2b49-69c9-2575244f16eb
+    - !<own> 9ec8f200-26da-0d52-2065-8d96038fafdd
+    - !<own> 543574e2-429b-ff3c-3dcb-50305224019f
+    - !<own> 72d49739-4234-b95b-6fa7-16049f90001e
+    - !<own> 4b5d4c1e-f53a-60bd-98bd-1fc0f6e3bfa9
+    - !<own> 22d1c8a3-0965-5d30-4c77-aff69213e080
+    - !<own> dae9e0bb-f896-e4fe-8b76-e7905ae53ef0
+    - !<own> 73601326-7660-09ef-cb0f-4041c13960fb
+    - !<own> 8a4b77ad-2148-a1c3-95cf-4bf95dfb7a93
+    - !<own> e2a58d33-496f-5cb8-9b58-e9474c9d37fa
+    - !<own> 38df44d1-fa1b-d6e6-b259-e6dec32e16dc
+    - !<own> d6bf9bf7-3536-02b1-40b4-afcdfa5b8821
+    - !<own> 71f9cd8c-6c9b-dd5c-ee62-11ff98d68cf5
+    - !<own> e9394eeb-b3dc-3417-0689-bdce3a89f647
+    - !<own> 367b3ada-7fca-6d02-0425-02e4742a25a7
+    - !<own> a9ac2b84-65d9-4348-a2ee-ec44818c87be
+    - !<own> f61cda04-9c5a-6674-4e35-4136a3789606
+    - !<own> 5c7259b6-1c8a-f34a-6bb8-5b8c0fe05d2f
+    - !<own> 99c1e3bb-b01c-f45f-9d35-509d6f59450a
+    - !<own> 93be4698-eebc-b2df-e64d-4f568cdf4f67
+    - !<own> bb50a00a-d669-79a2-0a42-7ade07cb068b
+    - !<own> 40af2c07-f465-0eca-b9c2-2f78abebcfc0
+    - !<own> 77f669cb-6337-b315-ddde-3dae9191d1d8
+    - !<own> 3a325245-7cab-317e-118f-18da5064e384
+    - !<own> 1a5f9235-f7d6-2a10-01c3-1d515225e011
     - !<own> a36e2f0e-b8a0-4084-5951-52e431dc90f9
+    - !<own> 2b981dfb-e397-577e-a42c-223d42a585d4
+    - !<own> e867c52c-4617-afe3-e1ae-a9624321720c
 - !<TypeScriptAssetData/04cc8000-b3d1-477c-96d2-a3b4519f48c4>
   SvgIcon: ""
   SetupScript:
@@ -70,7 +70,8 @@
   VersionPatch: 0
   ComponentUid: 28d10def-2c3f-4eb6-aa55-02d5c465fe6e
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -95,7 +96,8 @@
   VersionPatch: 0
   ComponentUid: 9c790f21-c0c1-4bc4-b362-f44dbf396b8b
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -116,7 +118,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 2a1ef82d-1bdf-47a6-87a2-c528aa58f7b2
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -136,7 +138,8 @@
   VersionPatch: 0
   ComponentUid: 4f681a5b-579b-4dbd-876f-0af706652971
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     characterControllerComponent: false
     collisionsController: false
@@ -190,7 +193,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> f8b58c08-1def-4169-a257-461791a77dd4
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -206,7 +209,7 @@
   ImporterName: MaterialImporter
   PrimaryAsset: !<reference> 2d125abc-e7a1-4abc-b634-b2750307b1ba
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -226,7 +229,8 @@
   VersionPatch: 0
   ComponentUid: 9bd560c6-0751-4eb9-ae29-f365525e115e
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -247,7 +251,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 696e2ef8-4bad-43bf-9e9e-ec817949126f
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -263,7 +267,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 6aedcc82-4ef6-4ca9-a930-bed2b8c76598
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -293,7 +297,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 492896f9-dce0-4df1-a085-01565a787116
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -328,7 +332,8 @@
   VersionPatch: 0
   ComponentUid: ab0c780c-f51e-4bfa-a85e-e30fea6b1c7b
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -380,7 +385,8 @@
   VersionPatch: 0
   ComponentUid: b56eee8e-54c0-4865-b282-84718f296c32
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -401,7 +407,7 @@
   ImporterName: RenderTargetImporter
   PrimaryAsset: !<reference> 262f59f4-b478-434c-9bc9-3d9573e16328
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -417,7 +423,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 6a603063-eb73-40dd-89f4-aacde928a5ca
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -437,7 +443,8 @@
   VersionPatch: 0
   ComponentUid: e8a04c54-82fd-4a80-9434-09cf375636ec
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -458,7 +465,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 72ff88d2-619d-4b58-9e90-1e4460023eac
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -474,7 +481,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 24cdbafc-9ca0-4c28-8094-2315b4f6eeb3
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -494,7 +501,8 @@
   VersionPatch: 0
   ComponentUid: 0c2f27db-fa63-4140-9a16-9e3903286864
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -515,7 +523,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 4947996a-1b2e-4d4a-9e2a-fe672716e966
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -531,7 +539,7 @@
   ImporterName: AnimationAssetImporter
   PrimaryAsset: !<reference> 874f661d-a6a5-48ac-9a21-cf01b338b308
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -547,7 +555,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 6a34ac2d-5138-47e5-a8ed-4b681afde084
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -563,7 +571,7 @@
   ImporterName: MarkdownAssetImporter
   PrimaryAsset: !<reference> f9699a3b-e11f-4116-8de3-e5118b24e7d0
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -579,7 +587,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 363354e4-f42b-4488-8110-c44fd8b6d3e9
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -632,7 +640,8 @@
   VersionPatch: 0
   ComponentUid: 8f29c744-32a5-4460-b65c-f61dc051e0de
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -657,7 +666,8 @@
   VersionPatch: 0
   ComponentUid: b8a58f8b-ea5c-499f-9b32-e72f8b7eadd2
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -678,7 +688,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 531d449a-f5bf-4fef-996c-588d17ee6f37
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -694,7 +704,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 152978e7-9431-489b-92d5-81d939c745c0
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -716,7 +726,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 01a95faa-b5bc-4303-84da-19079f8c6357
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -736,7 +746,8 @@
   VersionPatch: 0
   ComponentUid: d3eecbe6-6c1b-4453-8bff-8111a8fc1c42
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -757,7 +768,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> e7aa6e77-d15e-4bf2-9727-7da53394aca2
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -796,7 +807,8 @@
   VersionPatch: 0
   ComponentUid: 80177fba-7fb0-427b-978a-c7ca469d3322
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -817,7 +829,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> edd78e19-3d7f-485a-9308-9c00b571582d
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -837,7 +849,8 @@
   VersionPatch: 0
   ComponentUid: b3cbbbd8-9b65-4bac-b681-d11bf8f770ed
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     uiCameraPrefab: false
   ScriptTypesHidden:
@@ -857,7 +870,7 @@
   ImporterName: MaterialImporter
   PrimaryAsset: !<reference> 7ce3053e-2323-4d1c-8fa2-69099ffd37ea
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -910,7 +923,8 @@
   VersionPatch: 1
   ComponentUid: edc09be7-82c3-4526-a06e-102b65f50369
   ExportUid: d9485bf5-ab40-4b65-b847-6e6dabda8d23
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     config: false
     controlDotPrefab: false
@@ -936,11 +950,11 @@
   InputLines:
     - /*
     - "@typedef JoystickComponentConfig"
-    - "@property {float} renderOrder = 100"
+    - "@property {float} renderOrder = 100 "
     - '@property {int} position {"widget":"combobox", "values":[{"label":"Free", "value":0}, {"label":"Fixed", "value":1}]}'
     - '@property {Component.InteractionComponent} interactiveArea {"hint":"Interactive Area defines screen area where joystick may appear with Free position type. If configured, it appears only when a touch starts within this area. Otherwise, it can appear anywhere on screen.", "showIf":"position", "showIfValue":0}'
     - '@property {float} deadZone = 0.2 {"widget":"slider", "min":0, "max":0.99}'
-    - "@property {float} sensitivity = 0.96"
+    - "@property {float} sensitivity = 0.96 "
     - "*/"
     - // @input JoystickComponentConfig config
     - // @input Asset.ObjectPrefab controlDotPrefab
@@ -956,7 +970,8 @@
   VersionPatch: 0
   ComponentUid: fda46364-be3f-45d6-8336-5aa7fe59f2bd
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -977,7 +992,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 79b6334a-9ea9-4492-b4f0-8271b03f49eb
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -993,7 +1008,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 84f900a0-d530-43af-a3bc-bc945b86677d
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1009,7 +1024,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 56e680f4-a2f1-45a6-a999-59116186da46
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1025,7 +1040,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> d4929909-eb08-4b43-86a2-b28432cc7368
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1060,7 +1075,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> e4a8a14c-ea67-42eb-9648-6ae23a1393a5
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1076,7 +1091,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 75700b31-0e80-423a-a2da-719edf79a45d
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1092,7 +1107,7 @@
   ImporterName: FileTextureImporter
   PrimaryAsset: !<reference> eed17817-9138-491d-821e-8240c48a24da
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1112,7 +1127,8 @@
   VersionPatch: 0
   ComponentUid: d9dbc4e8-1c58-45f7-89d9-8838d0aafbee
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1133,7 +1149,7 @@
   ImporterName: AnimationAssetImporter
   PrimaryAsset: !<reference> fe6619a2-9da5-45cf-8c7a-66958ef1b72e
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1153,7 +1169,8 @@
   VersionPatch: 0
   ComponentUid: 8df1ae42-c8c5-43b9-9a40-f73357034900
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1191,7 +1208,8 @@
   VersionPatch: 0
   ComponentUid: 8ce5b51a-a7f0-4628-8a13-833df5017441
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     characterCollider: false
   ScriptTypesHidden:
@@ -1215,7 +1233,8 @@
   VersionPatch: 0
   ComponentUid: 5f23811e-4966-4250-a880-c910010c592d
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1240,7 +1259,8 @@
   VersionPatch: 0
   ComponentUid: d7a6fc3a-3bf9-409f-9e3c-cdf2c062f6eb
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     leftInputControlSpace: false
     rightInputControlSpace: false
@@ -1270,7 +1290,8 @@
   VersionPatch: 0
   ComponentUid: 50e14b74-b3b5-4a30-8a51-cea44fbd28cf
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1291,7 +1312,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> af855231-8a24-4d84-80b0-cbe516ca7267
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1307,7 +1328,7 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> 00a43e31-ae4f-467e-8e63-bbe8b0b0778e
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1323,7 +1344,7 @@
   ImporterName: AnimationAssetImporter
   PrimaryAsset: !<reference> 598b20c6-079c-4ac1-8d02-eda8ce8a8e07
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1339,7 +1360,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 01b54a64-c75a-4b94-bf32-d2deed498b47
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1359,7 +1380,8 @@
   VersionPatch: 0
   ComponentUid: e41c9ce0-96cb-4209-905b-7d518c8344be
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1384,7 +1406,8 @@
   VersionPatch: 0
   ComponentUid: 6c54faec-df58-40cc-9f48-85b62fded631
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1405,7 +1428,7 @@
   ImporterName: ShaderGraphPassImporter
   PrimaryAsset: !<reference> 127aff7c-8b93-44a4-bac6-e1dc47e699c6
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1421,7 +1444,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> aceef2db-7045-4213-a644-789d4cc8d118
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1441,7 +1464,8 @@
   VersionPatch: 0
   ComponentUid: dc19c5a6-1b5a-4561-b99b-d1c18e85e140
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1462,7 +1486,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 93f3a7b4-365d-45ef-8db7-453b11e5bff5
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1496,7 +1520,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> df705440-d819-4918-8406-bcb3b3dec0cd
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1528,7 +1552,7 @@
   ImporterName: DeviceCameraTextureImporter
   PrimaryAsset: !<reference> d7c1c40c-1bd3-4bc6-b7a4-2034aa481f21
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1548,7 +1572,8 @@
   VersionPatch: 0
   ComponentUid: a9800b50-6700-487c-8542-93a8970ecb13
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1569,7 +1594,7 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> 8003c00d-2ed5-481b-b40d-7bcef25519e7
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1585,7 +1610,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 4ddd7aa1-1e7f-4029-8654-cc7a3fdabdea
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1605,7 +1630,8 @@
   VersionPatch: 0
   ComponentUid: bc7ad821-23bf-4f51-a8f2-96d4f89c2b66
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1626,7 +1652,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> d7d3fc05-dfbc-4fa3-9c9f-7cd854f0c772
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1646,7 +1672,8 @@
   VersionPatch: 0
   ComponentUid: 8a77f848-861d-43ff-9be0-10ff33cc0c65
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1671,7 +1698,8 @@
   VersionPatch: 0
   ComponentUid: 3f8bbd58-19fb-4552-9348-585a4a686102
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1731,7 +1759,7 @@
   ImporterName: FileTextureImporter
   PrimaryAsset: !<reference> 17661317-3bb5-45b7-8c1d-0dab8f829322
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1768,7 +1796,8 @@
   VersionPatch: 0
   ComponentUid: 90db2abe-3f0c-401d-9854-83b8c9ef11ee
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1789,7 +1818,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 9cb98367-9135-402e-b09e-32570eaa4d13
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1805,7 +1834,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 2b743255-13bf-4847-9be3-be652cce9abd
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -1825,7 +1854,8 @@
   VersionPatch: 0
   ComponentUid: 1e85b8e4-7bc8-412f-8c9e-55d1c2309702
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -1918,7 +1948,8 @@
   VersionPatch: 0
   ComponentUid: d434d0c6-1525-4f3f-a279-adc6dbd7c20e
   ExportUid: 508db24e-6d7a-43b6-b21e-9b326bc9145f
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     acceleration: false
     airControl: true
@@ -2031,7 +2062,7 @@
     - '@property {Component.InteractionComponent} interactiveArea {"hint":"Interactive Area defines screen area where joystick may appear with Free position type. If configured, it appears only when a touch starts within this area. Otherwise, it can appear anywhere on screen.", "showIf":"joystickPositionTypeConfig", "showIfValue":0}'
     - '@property {float} sensitivity = 0.96 {"widget":"slider", "min":0.1, "max":1}'
     - '@property {float} deadZone = 0.1 {"widget":"slider", "min":0, "max":0.99}'
-    - "@property {int} renderOrder = 200"
+    - "@property {int} renderOrder = 200 "
     - "*/"
     - '// @input JoystickInputControlConfig joystickConfig {"showIf":"inputControlType", "showIfValue":1}'
     - '// @ui {"widget":"group_end"}'
@@ -2095,7 +2126,8 @@
   VersionPatch: 0
   ComponentUid: 32501b4a-6991-4e4c-8c49-90d8faa54c7f
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -2116,7 +2148,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 590f9bda-fa6d-4fc2-9ee0-24ab43916e5f
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2132,7 +2164,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 3fb4c6ca-c830-49f6-8c4f-b8690afbd744
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2148,7 +2180,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> a49c708b-b1a8-4440-bb30-92c4a4c1d1cf
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2164,7 +2196,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 7e53012f-1f2f-4912-a2d4-3aafc03abc83
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2184,7 +2216,8 @@
   VersionPatch: 0
   ComponentUid: e9c61ee6-b69b-4056-9b37-c884ded54578
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -2209,7 +2242,8 @@
   VersionPatch: 0
   ComponentUid: 8620dc3e-422a-4d0a-b814-8bd4bedb7f96
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -2263,7 +2297,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> e2b45962-5797-4946-91d5-d9abe41ec5ac
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2279,7 +2313,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 3cf1babf-4717-48fd-ac0a-76f202b239e6
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2299,7 +2333,8 @@
   VersionPatch: 0
   ComponentUid: b8c74797-94f6-4adb-a5e9-0d463c454646
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -2327,7 +2362,7 @@
   ImporterName: NativePackageDescriptorImporter
   PrimaryAsset: !<reference> 184f68a8-0aca-4680-abac-5e1db46ba0c6
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2347,7 +2382,8 @@
   VersionPatch: 0
   ComponentUid: f50d1020-cf12-4848-b26f-2a6256948876
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -2368,7 +2404,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> c30f5610-3d62-430d-86af-127e9664b26c
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2388,7 +2424,8 @@
   VersionPatch: 0
   ComponentUid: d74641ad-8893-42fc-be0f-cfaa1e9a9149
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -2413,7 +2450,8 @@
   VersionPatch: 0
   ComponentUid: c1bf5097-14d9-47fd-a303-464818e68c01
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -2482,7 +2520,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 2d4aa936-43f0-4cc3-8966-3ee7395f0396
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2498,7 +2536,7 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> 1ebd5ebd-76d8-43d4-a03e-0822855dfc75
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -2518,7 +2556,8 @@
   VersionPatch: 0
   ComponentUid: 6122cf3b-1666-4037-83bc-ed4ae94a3f6b
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:

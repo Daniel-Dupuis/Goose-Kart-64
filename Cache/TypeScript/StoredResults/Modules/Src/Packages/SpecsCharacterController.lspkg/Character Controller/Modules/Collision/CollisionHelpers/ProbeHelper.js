@@ -1,8 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RayCastController = void 0;
-exports.createProbe = createProbe;
-exports.getRayCastCollisionCharacterPosition = getRayCastCollisionCharacterPosition;
+exports.getRayCastCollisionCharacterPosition = exports.createProbe = exports.RayCastController = void 0;
 const SHAPE_ROTATION = quat.angleAxis(0, vec3.zero());
 class RayCastController {
     constructor(shapeForShapeCast, callbackWrapper, probe) {
@@ -36,9 +34,11 @@ function createProbe(config) {
     probe.filter.skipColliders = config.skip || [];
     return probe;
 }
+exports.createProbe = createProbe;
 function getRayCastCollisionCharacterPosition(start, end, hit) {
     return end.sub(start)
         .uniformScale(hit.t)
         .add(start);
 }
+exports.getRayCastCollisionCharacterPosition = getRayCastCollisionCharacterPosition;
 //# sourceMappingURL=ProbeHelper.js.map

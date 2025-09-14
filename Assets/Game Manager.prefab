@@ -1,0 +1,59 @@
+- !<ObjectPrefab/2b3ec0c9-8e42-441c-97b2-bddd81d74220>
+  PackagePath: ""
+  objects:
+    - !<own> 37b0d43b-47ff-4520-9122-b29e8cbdb079
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/1b22c8cd-29fb-4534-8765-3ee0be8a7f64>
+  PrefabRemaps:
+    []
+  Name: RacetrackAPIHandler
+  Enabled: true
+  ScriptAsset: !<reference> ac81a81a-5c1c-4a76-beaf-23fb03951345
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      internetModule: !<reference.InternetModule> 6b3e12bd-cd14-4ca5-ad67-5e438f3a0ad7
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/37b0d43b-47ff-4520-9122-b29e8cbdb079>
+  PrefabRemaps:
+    []
+  Name: Game Manager
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -40.964348, y: 13.837971, z: -94.845245}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 20.000000, y: 20.000000, z: 20.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e2e0c201-2f84-4dbc-b92e-91a149c4bc40
+    - !<own> 1b22c8cd-29fb-4534-8765-3ee0be8a7f64
+- !<ScriptComponent/e2e0c201-2f84-4dbc-b92e-91a149c4bc40>
+  PrefabRemaps:
+    []
+  Name: RacetrackGameManager
+  Enabled: true
+  ScriptAsset: !<reference> 068f8e07-ee1b-4f2a-b1ae-af5ba9b64083
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      rtapi: !<MappingBased.AssignableType> 1b22c8cd-29fb-4534-8765-3ee0be8a7f64
+      selectionButtonGrid: !<MappingBased.AssignableType_1> 0e90f4dd-2bd9-4766-b052-67b444cf48a4
+      mainHUD: !<reference.SceneObject> ac08ae5a-20f1-459b-9b4c-680375c9e2d4
+      levelSelectButtonPrefab: !<reference.ObjectPrefab> b04f2f2b-63c2-4fcb-b296-fd6b6585df69
+      track: !<MappingBased.AssignableType_2> 3fbf63ab-2d8e-4948-b687-5d84c48c66e0
+      openCloseButton: !<MappingBased.AssignableType_3> b72aca9a-f314-4464-8838-feaa90886596
+  ScriptTypes:
+    "":
+      {}

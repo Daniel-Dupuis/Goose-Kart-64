@@ -4,7 +4,7 @@
   ImporterName: WorldSettingsAssetImporter
   PrimaryAsset: !<reference> 88469de9-e9b1-4337-bce3-f6cae7b27386
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     AssetLibraryId: KM6lDqoPUPbeo8bUSxrkh
   AssetDataMap:

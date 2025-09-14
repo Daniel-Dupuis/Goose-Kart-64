@@ -1,7 +1,7 @@
 ﻿if (script.onAwake) {
-    script.onAwake();
-    return;
-}
+	script.onAwake();
+	return;
+};
 /*
 @typedef JoystickInputControlConfig
 @property {int} joystickPositionTypeConfig {"widget":"combobox", "values":[{"label":"Free", "value":0}, {"label":"Left", "value":1}, {"label":"Right", "value":2}, {"label":"Custom", "value":3}]}
@@ -9,17 +9,17 @@
 @property {Component.InteractionComponent} interactiveArea {"hint":"Interactive Area defines screen area where joystick may appear with Free position type. If configured, it appears only when a touch starts within this area. Otherwise, it can appear anywhere on screen.", "showIf":"joystickPositionTypeConfig", "showIfValue":0}
 @property {float} sensitivity = 0.96 {"widget":"slider", "min":0.1, "max":1}
 @property {float} deadZone = 0.1 {"widget":"slider", "min":0, "max":0.99}
-@property {int} renderOrder = 200
+@property {int} renderOrder = 200 
 */
-function checkUndefined(property, showIfData) {
-    for (var i = 0; i < showIfData.length; i++) {
-        if (showIfData[i][0] && script[showIfData[i][0]] != showIfData[i][1]) {
-            return;
-        }
-    }
-    if (script[property] == undefined) {
-        throw new Error("Input " + property + " was not provided for the object " + script.getSceneObject().name);
-    }
+function checkUndefined(property, showIfData){
+   for (var i = 0; i < showIfData.length; i++){
+       if (showIfData[i][0] && script[showIfData[i][0]] != showIfData[i][1]){
+           return;
+       }
+   }
+   if (script[property] == undefined){
+      throw new Error('Input ' + property + ' was not provided for the object ' + script.getSceneObject().name);
+   }
 }
 // @ui {"widget":"group_start", "label":"Movement"}
 // @input float moveSpeed = 100 {"hint":"Controls how fast the character moves", "widget":"spinbox", "min":0}
@@ -78,14 +78,15 @@ function checkUndefined(property, showIfData) {
 // @ui {"widget":"group_end"}
 // @ui {"widget":"separator"}
 // @input bool printWarningStatements = "true" {"label":"Print Warnings"}
-if (!global.BaseScriptComponent) {
-    function BaseScriptComponent() {}
-    global.BaseScriptComponent = BaseScriptComponent;
-    global.BaseScriptComponent.prototype = Object.getPrototypeOf(script);
-    global.BaseScriptComponent.prototype.__initialize = function () {};
-    global.BaseScriptComponent.getTypeName = function () {
-        throw new Error("Cannot get type name from the class, not decorated with @component");
-    };
+var scriptPrototype = Object.getPrototypeOf(script);
+if (!global.BaseScriptComponent){
+   function BaseScriptComponent(){}
+   global.BaseScriptComponent = BaseScriptComponent;
+   global.BaseScriptComponent.prototype = scriptPrototype;
+   global.BaseScriptComponent.prototype.__initialize = function(){};
+   global.BaseScriptComponent.getTypeName = function(){
+       throw new Error("Cannot get type name from the class, not decorated with @component");
+   }
 }
 var Module = require("../../../../../Modules/Src/Packages/SpecsCharacterController.lspkg/Character Controller/Character Controller");
 Object.setPrototypeOf(script, Module.CharacterController.prototype);

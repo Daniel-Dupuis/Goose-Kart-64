@@ -1,9 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ShapeType = void 0;
-exports.getShapeType = getShapeType;
-exports.getAxis = getAxis;
-exports.getAxisDirection = getAxisDirection;
+exports.getAxisDirection = exports.getAxis = exports.getShapeType = exports.ShapeType = void 0;
 var ShapeType;
 (function (ShapeType) {
     ShapeType["Sphere"] = "Sphere";
@@ -38,6 +35,7 @@ function getShapeType(collider) {
         return ShapeType.Unsupported;
     }
 }
+exports.getShapeType = getShapeType;
 function getAxis(axis) {
     switch (axis) {
         case Axis.X:
@@ -48,6 +46,7 @@ function getAxis(axis) {
             return "z";
     }
 }
+exports.getAxis = getAxis;
 function getAxisDirection(axis) {
     switch (axis) {
         case Axis.X:
@@ -58,4 +57,5 @@ function getAxisDirection(axis) {
             return vec3.forward();
     }
 }
+exports.getAxisDirection = getAxisDirection;
 //# sourceMappingURL=ShapeHelper.js.map

@@ -172,9 +172,6 @@
         Port_LODValue_N122:
           typeIdx: 1
           value: 0.000000
-        Port_PrevWorldPosition_N004:
-          typeIdx: 4
-          value: {x: 0.000000, y: 0.000000, z: 0.000000}
         Port_RangeMaxA_N017:
           typeIdx: 1
           value: 2.000000
@@ -581,7 +578,7 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: 83fafb7d-7c53-022b-3af1-30faf23292c2/7f535d32bbe1510db6115116fbade5a1/Data/5c693aa/CircleGridHands.glsl
+      ShaderPath: 83fafb7d-7c53-022b-3af1-30faf23292c2/7f535d32bbe1510db6115116fbade5a1/Data/6533ae0/CircleGridHands.glsl
       Defines:
         []
       Properties:

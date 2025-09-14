@@ -1,11 +1,14 @@
 - !<AssetImportMetadata/3c1c3efa-a63c-48a2-bc4b-2eae96fe5a5e>
   ImportedAssetIds:
-    2cc42f836160b3dc: !<reference> 4b209397-d121-41e1-b5dd-e389e5143d12
-    6fd02119b1d75e79: !<reference> 8362812d-9ce2-4063-b1d5-cab3483de07f
-    7a0dd5cd69df73fa: !<reference> cf0e87a2-f542-40ef-a4dd-b2b8824f0620
-    8644004bb5813f85: !<reference> 63b13ae8-92a0-4ae8-ae7b-b06afee0e40a
-    87ccc72f441ec202: !<reference> f13d2a4e-23d0-4164-888c-f82720d9427f
-    91440ebf80d66961: !<reference> c215c47b-6e92-490c-8e7a-4a4330be47a7
+    0836641c0dc9ef03: !<reference> 01b0dc1c-b021-4735-8050-3ff34e0b70f4
+    0edc0b811f0a4d9f: !<reference> a9c3a243-1613-4542-97a2-bfed507c44e6
+    15303c2f63632b50: !<reference> a26eb938-f076-4422-a4b3-fca92dd4ecc1
+    2fe651d50e3f5cdf: !<reference> 3778fb29-2125-4c56-a324-34bb8138dfa2
+    3685c0bbb51cd70e: !<reference> 178db535-0069-4535-91a0-4fad63edbf5d
+    66780cf3a4dcb2b8: !<reference> 355c275a-4a97-4fd7-a426-53f94ab23345
+    7e0ecfe083368281: !<reference> e80fd96e-1225-4c85-9c08-189580d9dd48
+    93207a9289f33c7d: !<reference> a0fe2f71-1b30-404c-a127-8d23ee6f9900
+    94d78db71e87e7a0: !<reference> f4e8425f-4d3e-4c65-9c13-9afaea7022ee
     Meshes/Cube.001: !<reference> d32023db-34f8-452c-8d6e-aa165de56629
     Meshes/Cube.002: !<reference> 21ae1034-dfc6-410c-9eed-60e4862bccb8
     Meshes/Cylinder: !<reference> 40a138fd-f19a-4990-a7d2-1b015728cdaf
@@ -13,17 +16,14 @@
     Meshes/Cylinder.004: !<reference> 862ec59b-059c-43b7-9a97-3f2920ab0fc8
     Meshes/Cylinder.005: !<reference> 8398ce5d-cbf4-4b6a-9bf2-427b4361c7bb
     Scene: !<reference> ef10c6c3-da11-4a16-b3e6-dba2fef7809c
-    ac1ee3a7a2ee5df2: !<reference> 914a9f62-e28d-407c-9b01-0446073f202e
-    b2081c8c071a1bf8: !<reference> 95dbf95f-926b-4f77-a4b7-51a2fe5ed274
-    b2d135a845a6b3d8: !<reference> f857e175-3462-4949-84f5-ac731ba16066
-    c865724f7edff2d9: !<reference> e5e66e2b-ac55-478b-be65-1b6bc535910b
-    d3b42709056e9942: !<reference> dfe9a566-d8e6-428f-a214-88bf03e1485c
-    e33e1fd7a3ca185d: !<reference> 55681d82-933e-4286-99e4-5af3585f3ad0
-    fc0d152c4ff89b3b: !<reference> 1643c5d4-4538-410a-b495-add7a2799a32
+    cc9abfe48ba2343d: !<reference> 3abdf118-80bc-4eca-9cc1-5882cb81e2bd
+    dc12fe4f6ddd559f: !<reference> f70c4c7a-2176-4c6c-9d23-2afc5a51393b
+    e042c94ee9c94151: !<reference> 1415cc7c-2a10-41ae-a128-e8f40fea4e0c
+    eea672087bf90d46: !<reference> 21e87d74-6c5a-4d93-b793-59221a0a28cc
   ImporterName: ObjImporter
   PrimaryAsset: !<reference> ef10c6c3-da11-4a16-b3e6-dba2fef7809c
   PackageType: LegacyPackage
-  LegacyPackagePolicy: CanBeUnpackedTransparent
+  PackagePolicy: CanBeUnpackedTransparent
   ExtraData:
     {}
   AssetDataMap:

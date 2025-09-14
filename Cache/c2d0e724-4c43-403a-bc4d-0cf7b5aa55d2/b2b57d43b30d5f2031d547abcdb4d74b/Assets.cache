@@ -38,9 +38,6 @@
         Port_GSplatScale_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 0.000000, z: 0.000000}
-        Port_PrevWorldPosition_N004:
-          typeIdx: 4
-          value: {x: 0.000000, y: 0.000000, z: 0.000000}
         Port_RayDirection_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 1.000000, z: 0.000000}
@@ -1456,7 +1453,7 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: c2d0e724-4c43-403a-bc4d-0cf7b5aa55d2/b2b57d43b30d5f2031d547abcdb4d74b/Data/5c693aa/uber_pbr.glsl
+      ShaderPath: c2d0e724-4c43-403a-bc4d-0cf7b5aa55d2/b2b57d43b30d5f2031d547abcdb4d74b/Data/6533ae0/uber_pbr.glsl
       Defines:
         []
       Properties:

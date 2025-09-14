@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/8eda169f-e108-4260-8945-3ba7e0951ec3>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 068f8e07-ee1b-4f2a-b1ae-af5ba9b64083
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 068f8e07-ee1b-4f2a-b1ae-af5ba9b64083
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d57853ff-0a53-4ec7-8def-6048c3746d48
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d57853ff-0a53-4ec7-8def-6048c3746d48>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 58defd75-cba8-49b5-8707-c9fb52440deb
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    goose: false
+    levelSelectButtonPrefab: false
+    mainHUD: false
+    openCloseButton: false
+    rtapi: false
+    sceneController: false
+    selectionButtonGrid: false
+    track: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - rtapi: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      selectionButtonGrid: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      mainHUD: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      levelSelectButtonPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      track: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      openCloseButton: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      sceneController: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      goose: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType rtapi
+    - // @input AssignableType_1 selectionButtonGrid
+    - // @input SceneObject mainHUD
+    - // @input Asset.ObjectPrefab levelSelectButtonPrefab
+    - // @input AssignableType_2 track
+    - // @input AssignableType_3 openCloseButton
+    - // @input AssignableType_4 sceneController
+    - // @input SceneObject goose

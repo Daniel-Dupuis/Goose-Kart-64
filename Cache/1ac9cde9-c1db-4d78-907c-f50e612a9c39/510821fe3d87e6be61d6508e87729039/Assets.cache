@@ -64,9 +64,6 @@
         Port_LODValue_N000:
           typeIdx: 1
           value: -1.000000
-        Port_PrevWorldPosition_N004:
-          typeIdx: 4
-          value: {x: 0.000000, y: 0.000000, z: 0.000000}
         Port_RayDirection_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 1.000000, z: 0.000000}
@@ -204,7 +201,7 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: 1ac9cde9-c1db-4d78-907c-f50e612a9c39/510821fe3d87e6be61d6508e87729039/Data/5c693aa/imageRGBA_multi_select1.glsl
+      ShaderPath: 1ac9cde9-c1db-4d78-907c-f50e612a9c39/510821fe3d87e6be61d6508e87729039/Data/6533ae0/imageRGBA_multi_select1.glsl
       Defines:
         []
       Properties:

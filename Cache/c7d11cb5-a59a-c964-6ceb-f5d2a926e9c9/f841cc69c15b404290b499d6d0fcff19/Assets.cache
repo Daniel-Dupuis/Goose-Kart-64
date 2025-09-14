@@ -58,9 +58,6 @@
         Port_Opacity_N405:
           typeIdx: 1
           value: 1.000000
-        Port_PrevWorldPosition_N004:
-          typeIdx: 4
-          value: {x: 0.000000, y: 0.000000, z: 0.000000}
         Port_RayDirection_N004:
           typeIdx: 4
           value: {x: 0.000000, y: 1.000000, z: 0.000000}
@@ -1819,7 +1816,7 @@
             mValues:
               []
         ShaderType: Mesh3d
-      ShaderPath: c7d11cb5-a59a-c964-6ceb-f5d2a926e9c9/f841cc69c15b404290b499d6d0fcff19/Data/5c693aa/gltf.glsl
+      ShaderPath: c7d11cb5-a59a-c964-6ceb-f5d2a926e9c9/f841cc69c15b404290b499d6d0fcff19/Data/6533ae0/gltf.glsl
       Defines:
         []
       Properties:

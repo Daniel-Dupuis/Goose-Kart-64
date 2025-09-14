@@ -6,21 +6,21 @@
   SourceHash: dd1d0ce6f31ce07336d89069ef64840a
   FileHash: 7c35f59338ad330f53e602e0b640002b
   NativePackageItems:
-    - !<own> e36cf581-ec32-0009-2a73-bf547c6b369c
-    - !<own> 50791c15-1f61-529f-3b16-4a8f053cd51c
     - !<own> c7d11cb5-a59a-c964-6ceb-f5d2a926e9c9
-    - !<own> 78f79eb8-b9d2-bfb3-0c27-4613dca04162
-    - !<own> 0818756d-ad65-b952-044e-e157930d6aa4
-    - !<own> 7008d20b-c407-6519-8a28-f2abfb3b68c5
+    - !<own> e36cf581-ec32-0009-2a73-bf547c6b369c
     - !<own> 1c2486e8-4d02-967f-ad3a-dab599442534
     - !<own> 07b1aa60-81a5-4259-e88f-c85d8e9c02f1
+    - !<own> 7008d20b-c407-6519-8a28-f2abfb3b68c5
+    - !<own> 78f79eb8-b9d2-bfb3-0c27-4613dca04162
+    - !<own> 0818756d-ad65-b952-044e-e157930d6aa4
+    - !<own> 50791c15-1f61-529f-3b16-4a8f053cd51c
 - !<AssetImportMetadata/07b1aa60-81a5-4259-e88f-c85d8e9c02f1>
   ImportedAssetIds:
     Texture: !<reference> 872f0f4a-4987-49dc-9107-bbdd51d69cf1
   ImporterName: ScreenTextureImporter
   PrimaryAsset: !<reference> 872f0f4a-4987-49dc-9107-bbdd51d69cf1
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -36,7 +36,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> eaed9465-3a01-4092-8f24-103a40681305
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -56,7 +56,8 @@
   VersionPatch: 0
   ComponentUid: 12d25ad6-bcf9-4215-8278-fcff07eedffe
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -81,7 +82,8 @@
   VersionPatch: 0
   ComponentUid: 4a463a4e-c60c-499a-9728-c8db9fec16b4
   ExportUid: 00000000-0000-0000-0000-000000000000
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     {}
   ScriptTypesHidden:
@@ -102,7 +104,7 @@
   ImporterName: MarkdownAssetImporter
   PrimaryAsset: !<reference> fa18c216-d740-4ddd-acb4-8cfe095af07c
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -118,7 +120,7 @@
   ImporterName: MaterialImporter
   PrimaryAsset: !<reference> 40b3147b-e211-4919-9ba0-bedd05c60132
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -134,7 +136,7 @@
   ImporterName: NativePackageDescriptorImporter
   PrimaryAsset: !<reference> 5b3a9d19-3f03-440b-8fa6-79be69ae19bb
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -161,7 +163,8 @@
   VersionPatch: 2
   ComponentUid: 0005e0cc-4592-ac28-0000-000000067b6a
   ExportUid: ddcf68f3-8b0a-4c9f-aa92-854bdf5cfeca
-  PackagePolicy: CanBeUnpacked
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
   ScriptInputsHidden:
     autoDownload: false
     bitmojiType: false
@@ -208,7 +211,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> b3db8aea-f201-44c4-ab3c-b03f7e6cc5c2
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -224,7 +227,7 @@
   ImporterName: ShaderGraphPassImporter
   PrimaryAsset: !<reference> bfb163f0-9ab8-4844-90c2-1ca52667e59f
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
@@ -240,7 +243,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 7a3c78c1-4ff4-41a1-9f38-a2b9e6360f03
   PackageType: NotAPackage
-  LegacyPackagePolicy: ~
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     {}
   AssetDataMap:
