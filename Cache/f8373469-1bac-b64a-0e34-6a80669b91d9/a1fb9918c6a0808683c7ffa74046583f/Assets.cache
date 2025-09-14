@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    cf3666db-9abf-43e8-a419-53d33193d3ff: f8373469-1bac-b64a-0e34-6a80669b91d9/a1fb9918c6a0808683c7ffa74046583f/Data/Bearing.mesh
+  Assets:
+    - !<FileMesh/cf3666db-9abf-43e8-a419-53d33193d3ff>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 184
+        Vertices: 190
+        Blendshapes:
+          []
+        Joints: 0
+        AabbSize: {x: 0.342245, y: 0.342436, z: 7.144274}
+  SourceHash: a1fb9918c6a0808683c7ffa74046583f
+  FileHash: fc5073276c84d19e482674cd62d18d63
+  NativePackageItems:
+    []

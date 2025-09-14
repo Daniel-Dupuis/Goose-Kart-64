@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    766548c2-1087-4627-b445-6082de38a5aa: d246476f-1fa7-2c1a-5bc1-3a3a883011cf/8ba9ae4dfb924ba32bdec892545f86f5/Data/Wheel.mesh
+  Assets:
+    - !<FileMesh/766548c2-1087-4627-b445-6082de38a5aa>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 184
+        Vertices: 190
+        Blendshapes:
+          []
+        Joints: 0
+        AabbSize: {x: 3.702853, y: 3.704020, z: 1.428854}
+  SourceHash: 8ba9ae4dfb924ba32bdec892545f86f5
+  FileHash: a7ffcae7aaade5cf09ea35a99e50346e
+  NativePackageItems:
+    []

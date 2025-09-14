@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    b4e6f754-070c-4af4-a3a9-30faa78b3e68: 28192a13-deb0-447d-a082-266f4f7f3df9/31764c4eb0ca3885221dab50773008a5/Data/ghost_goose.png
+  Assets:
+    - !<FileTexture/b4e6f754-070c-4af4-a3a9-30faa78b3e68>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1024
+        Height: 1024
+  SourceHash: 31764c4eb0ca3885221dab50773008a5
+  FileHash: 20e92c9f975a2f6fda9ad906d05ad06c
+  NativePackageItems:
+    []

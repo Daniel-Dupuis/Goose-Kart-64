@@ -1,0 +1,32 @@
+- !<AssetCache>
+  AssetFiles:
+    37a52971-1b4c-41c1-8e0d-377e8aa83b7a: d154e727-f437-9e90-3dcf-1dbdbfc280af/9fa6f6d614f2aa5d278d174136f9bf36/Data/drag.t3d
+    69b43c43-3396-4307-9d34-278415e90219: d154e727-f437-9e90-3dcf-1dbdbfc280af/9fa6f6d614f2aa5d278d174136f9bf36/Data/atlas_0.pvr
+  Assets:
+    - !<AnimatedTexture/37a52971-1b4c-41c1-8e0d-377e8aa83b7a>
+      PackagePath: ""
+      keyFrames:
+        default:
+          - time: 0.000000
+            value: 0
+          - time: 1.500000
+            value: 24
+          - time: 1.500000
+            value: 39
+      ReverseSupported: true
+      FrameSize: {x: 87, y: 256}
+      AnimationSequences:
+        default: 39
+      AutoPlay: true
+      Reversed: false
+      PingPong: false
+      CurrentSequence: default
+    - !<FileTexture/69b43c43-3396-4307-9d34-278415e90219>
+      PackagePath: atlas_0.pvr
+      FileInfo: !<FileTextureInfo>
+        Width: 870
+        Height: 1024
+  SourceHash: 9fa6f6d614f2aa5d278d174136f9bf36
+  FileHash: f2748febaf167775a3efc2557c5af599
+  NativePackageItems:
+    []

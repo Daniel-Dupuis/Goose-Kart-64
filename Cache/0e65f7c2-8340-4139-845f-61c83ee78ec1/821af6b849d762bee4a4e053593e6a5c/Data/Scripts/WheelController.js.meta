@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/0e9b2be0-60db-42b2-8fe4-e28857270c8d>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> eacadbf1-9600-4955-b5e7-1a74ad0c6710
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> eacadbf1-9600-4955-b5e7-1a74ad0c6710
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData: {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> fc9aa068-f4ec-4bf3-8e70-762f570d4917
+  DependentFiles: []
+  ImporterSettings: !<AssetImporterSettings> {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fc9aa068-f4ec-4bf3-8e70-762f570d4917>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 051321d9-f685-4c1b-910c-c770e7b79585
+  ExportUid: 09a7721e-e8c8-4ecc-4f63-3494590a783d
+  ScriptInputsHidden:
+    draggable: false
+    force: false
+    wheelBodys: false
+  ScriptTypesHidden: {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - wheelBodys: !<reference.BodyComponent[]> []
+      force: !<float> 0.000000
+      draggable: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    - {}

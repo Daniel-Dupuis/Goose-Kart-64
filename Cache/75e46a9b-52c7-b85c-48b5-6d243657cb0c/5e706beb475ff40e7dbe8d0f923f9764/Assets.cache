@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    8b1cd3b5-e6e6-4775-8a56-d9490bcf10ac: 75e46a9b-52c7-b85c-48b5-6d243657cb0c/5e706beb475ff40e7dbe8d0f923f9764/Data/Seat.mesh
+  Assets:
+    - !<FileMesh/8b1cd3b5-e6e6-4775-8a56-d9490bcf10ac>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 58
+        Vertices: 80
+        Blendshapes:
+          []
+        Joints: 0
+        AabbSize: {x: 4.286564, y: 5.715419, z: 5.715418}
+  SourceHash: 5e706beb475ff40e7dbe8d0f923f9764
+  FileHash: 84c1c9254a70077da8b09d4b29fddf69
+  NativePackageItems:
+    []

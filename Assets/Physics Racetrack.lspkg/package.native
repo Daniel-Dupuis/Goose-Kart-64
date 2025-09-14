@@ -1,0 +1,33 @@
+- !<NativePackageDescriptor/746cd995-9166-454e-aea2-3dda57dd7836>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 13
+    patch: 1
+    build: 25090323
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: Add physics car with enhanced physics feature in Lens Studio. Click here to learn more on how to use Physics Racetrack
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 73
+  ExportUid: a36b4c46-5d7c-496a-a17c-2202fc60858f
+  ComponentUid: 7afb8dd6-1e1b-4df8-b71a-d045a5fe429d
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

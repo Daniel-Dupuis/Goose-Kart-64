@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    a1fa6bc8-b85d-4284-acc7-b92c84bb4121: 8278ceff-d621-2403-7d2d-eef115ad3e83/b008a92c38292d6892390e6d088d7147/Data/Cone.png
+  Assets:
+    - !<FileTexture/a1fa6bc8-b85d-4284-acc7-b92c84bb4121>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1024
+        Height: 1024
+  SourceHash: b008a92c38292d6892390e6d088d7147
+  FileHash: f12d94031758f9f7354fae7f8f7678c6
+  NativePackageItems:
+    []

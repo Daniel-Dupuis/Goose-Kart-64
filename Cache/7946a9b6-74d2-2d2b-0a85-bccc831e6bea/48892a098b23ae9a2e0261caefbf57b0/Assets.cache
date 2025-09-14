@@ -1,0 +1,30 @@
+- !<AssetCache>
+  AssetFiles:
+    4172caf4-be56-4a6e-8991-5acd93596934: 7946a9b6-74d2-2d2b-0a85-bccc831e6bea/48892a098b23ae9a2e0261caefbf57b0/Data/tap.t3d
+    5a3fa06f-c043-4d80-85c9-7b4d47723213: 7946a9b6-74d2-2d2b-0a85-bccc831e6bea/48892a098b23ae9a2e0261caefbf57b0/Data/atlas_0.pvr
+  Assets:
+    - !<AnimatedTexture/4172caf4-be56-4a6e-8991-5acd93596934>
+      PackagePath: ""
+      keyFrames:
+        default:
+          - time: 0.000000
+            value: 0
+          - time: 1.000000
+            value: 50
+      ReverseSupported: true
+      FrameSize: {x: 116, y: 146}
+      AnimationSequences:
+        default: 50
+      AutoPlay: true
+      Reversed: false
+      PingPong: false
+      CurrentSequence: default
+    - !<FileTexture/5a3fa06f-c043-4d80-85c9-7b4d47723213>
+      PackagePath: atlas_0.pvr
+      FileInfo: !<FileTextureInfo>
+        Width: 928
+        Height: 1022
+  SourceHash: 48892a098b23ae9a2e0261caefbf57b0
+  FileHash: 2266092c97a4c1193ff551b9d0b081bd
+  NativePackageItems:
+    []

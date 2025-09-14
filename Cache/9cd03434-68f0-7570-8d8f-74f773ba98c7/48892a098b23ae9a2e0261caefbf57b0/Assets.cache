@@ -1,0 +1,30 @@
+- !<AssetCache>
+  AssetFiles:
+    9de82c61-4e36-4d45-b7ba-fa02df8ac7d3: 9cd03434-68f0-7570-8d8f-74f773ba98c7/48892a098b23ae9a2e0261caefbf57b0/Data/touch.t3d
+    ac401d19-8d2c-4111-a11e-5e3812939775: 9cd03434-68f0-7570-8d8f-74f773ba98c7/48892a098b23ae9a2e0261caefbf57b0/Data/atlas_0.pvr
+  Assets:
+    - !<AnimatedTexture/9de82c61-4e36-4d45-b7ba-fa02df8ac7d3>
+      PackagePath: ""
+      keyFrames:
+        default:
+          - time: 0.000000
+            value: 30
+          - time: 0.800000
+            value: 40
+      ReverseSupported: true
+      FrameSize: {x: 116, y: 146}
+      AnimationSequences:
+        default: 50
+      AutoPlay: true
+      Reversed: false
+      PingPong: false
+      CurrentSequence: default
+    - !<FileTexture/ac401d19-8d2c-4111-a11e-5e3812939775>
+      PackagePath: atlas_0.pvr
+      FileInfo: !<FileTextureInfo>
+        Width: 928
+        Height: 1022
+  SourceHash: 48892a098b23ae9a2e0261caefbf57b0
+  FileHash: 2266092c97a4c1193ff551b9d0b081bd
+  NativePackageItems:
+    []

@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/fc1432ce-bdd5-9255-7ef0-87a312005c5c>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 28d7feb9-1f0d-42d2-89e5-e41ae0325e0d
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 28d7feb9-1f0d-42d2-89e5-e41ae0325e0d
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: KM6lDqoPUPbeo8bUSxrkh
+  AssetDataMap:
+    JavaScriptAsset: !<own> 72c918df-8be4-41ba-a411-2b9ba4aaea93
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/72c918df-8be4-41ba-a411-2b9ba4aaea93>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c5b72495-af5a-4d59-91b8-7fa1eaa95d69
+  ExportUid: 09a7721e-e8c8-4ecc-4f63-3494590a7845
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    additive: false
+    delay: false
+    easingFunction: false
+    easingType: false
+    end: false
+    from: false
+    loopType: false
+    movementType: false
+    offset: false
+    playAutomatically: false
+    recursive: false
+    sceneObjectReference: false
+    start: false
+    time: false
+    to: false
+    tweenName: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - sceneObjectReference: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tweenName: ""
+      playAutomatically: true
+      loopType: 0
+      movementType: 0
+      start: !<float> 0.000000
+      end: !<float> 1.000000
+      from: !<float> 0.000000
+      to: !<float> 0.000000
+      offset: !<float> 0.000000
+      additive: false
+      recursive: false
+      time: !<float> 1.000000
+      delay: !<float> 0.000000
+      easingFunction: Quadratic
+      easingType: Out
+  ScriptTypes:
+    -
+      {}

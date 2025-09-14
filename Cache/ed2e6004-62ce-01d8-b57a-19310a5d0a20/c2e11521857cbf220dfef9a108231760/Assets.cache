@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    3245d2fa-5c51-409e-ac06-bef885eb9a3a: ed2e6004-62ce-01d8-b57a-19310a5d0a20/c2e11521857cbf220dfef9a108231760/Data/Arm.mesh
+  Assets:
+    - !<FileMesh/3245d2fa-5c51-409e-ac06-bef885eb9a3a>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 184
+        Vertices: 190
+        Blendshapes:
+          []
+        Joints: 0
+        AabbSize: {x: 0.701571, y: 0.701900, z: 5.420604}
+  SourceHash: c2e11521857cbf220dfef9a108231760
+  FileHash: 0963b6c8e3cff84a85b1fc832b468bb5
+  NativePackageItems:
+    []

@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/c24de27b-455f-84c0-22de-50ce2ec2222f>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 642b2cd4-59c0-408b-88cb-af8c8a53ad13
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 642b2cd4-59c0-408b-88cb-af8c8a53ad13
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: KM6lDqoPUPbeo8bUSxrkh
+  AssetDataMap:
+    JavaScriptAsset: !<own> e219454d-4c3b-4cce-93bf-d525d65883ba
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/e219454d-4c3b-4cce-93bf-d525d65883ba>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 9d8cc907-b90d-4f6a-8404-ac02917cd60e
+  ExportUid: 09a7721e-e8c8-4ecc-4f63-3494590a7838
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    slowStep: false
+    slowTime: false
+    worldComponent: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - worldComponent: !<reference.WorldComponent> 00000000-0000-0000-0000-000000000000
+      slowStep: !<float> 0.000000
+      slowTime: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}

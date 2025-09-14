@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    e54b19c1-8e74-4899-b36a-721ad9b3b2de: 9851428f-87b8-4d51-8349-0a0b3aa8c707/3f926735e95ab7fe902b477146c36123/Data/goose.png
+  Assets:
+    - !<FileTexture/e54b19c1-8e74-4899-b36a-721ad9b3b2de>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1024
+        Height: 1024
+  SourceHash: 3f926735e95ab7fe902b477146c36123
+  FileHash: 253a9d8211c293e962e61c76e328e29d
+  NativePackageItems:
+    []

@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    163a99b7-3923-46bc-8f74-92e4adec29d8: 73558bd8-2555-0555-c9d0-475d1082a4ea/212a4cee7c7500e235bcaaedb80071b2/Data/Wind Shield.mesh
+  Assets:
+    - !<FileMesh/163a99b7-3923-46bc-8f74-92e4adec29d8>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 36
+        Vertices: 48
+        Blendshapes:
+          []
+        Joints: 0
+        AabbSize: {x: 1.428854, y: 1.428855, z: 5.715418}
+  SourceHash: 212a4cee7c7500e235bcaaedb80071b2
+  FileHash: 24cb366c5ebc881ae5b19fc494c03fa9
+  NativePackageItems:
+    []

@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    30222dac-7366-454a-9c73-9d18b1311cb1: ad280a35-1e22-5a6a-3e13-19c70035686f/bb0adeb85b3866ca7244341e223b7fa6/Data/Wheel.png
+  Assets:
+    - !<FileTexture/30222dac-7366-454a-9c73-9d18b1311cb1>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 512
+        Height: 512
+  SourceHash: bb0adeb85b3866ca7244341e223b7fa6
+  FileHash: dcfae0f785aeb80a1bd220d0fc205f51
+  NativePackageItems:
+    []

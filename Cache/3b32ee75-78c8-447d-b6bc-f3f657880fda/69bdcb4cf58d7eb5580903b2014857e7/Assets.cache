@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    02f0ec72-8db8-4ee1-857d-81b938e98727: 3b32ee75-78c8-447d-b6bc-f3f657880fda/69bdcb4cf58d7eb5580903b2014857e7/Data/cart.png
+  Assets:
+    - !<FileTexture/02f0ec72-8db8-4ee1-857d-81b938e98727>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1024
+        Height: 1024
+  SourceHash: 69bdcb4cf58d7eb5580903b2014857e7
+  FileHash: 2487c97e505ab50d691c712a0d4b7f7b
+  NativePackageItems:
+    []

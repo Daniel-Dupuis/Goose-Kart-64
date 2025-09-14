@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/58141fd6-1583-42b1-ba7f-c76d5154fc96>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> e3ae23f7-6bfd-4a01-9ab4-d892c0c2c7fd
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> e3ae23f7-6bfd-4a01-9ab4-d892c0c2c7fd
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 70a90830-4540-4226-a85d-65f8f7642027
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/70a90830-4540-4226-a85d-65f8f7642027>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 767bf2da-0d05-4a62-8761-c53d9fc69a43
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audio: false
+    meshVisual: false
+    targetOutlineMaterial: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - audio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      targetOutlineMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      meshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.AudioComponent audio
+    - '// @input Asset.Material targetOutlineMaterial {"hint":"Material used to outline the object on hover (optional)"}'
+    - // @input Component.RenderMeshVisual meshVisual

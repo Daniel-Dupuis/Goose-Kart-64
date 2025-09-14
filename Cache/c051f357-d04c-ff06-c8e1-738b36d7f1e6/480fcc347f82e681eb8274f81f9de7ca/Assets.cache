@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    964f96d9-6c46-4f8e-ae2f-36cad5919591: c051f357-d04c-ff06-c8e1-738b36d7f1e6/480fcc347f82e681eb8274f81f9de7ca/Data/balloon.mesh
+  Assets:
+    - !<FileMesh/964f96d9-6c46-4f8e-ae2f-36cad5919591>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 1470
+        Vertices: 949
+        Blendshapes:
+          []
+        Joints: 0
+        AabbSize: {x: 0.059848, y: 0.076611, z: 0.059850}
+  SourceHash: 480fcc347f82e681eb8274f81f9de7ca
+  FileHash: d54f065b20b69d03346c44da10e43679
+  NativePackageItems:
+    []

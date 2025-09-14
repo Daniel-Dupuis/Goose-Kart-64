@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    de5f57cc-021d-44c4-9616-c192abf3f9ef: 88c53809-3a24-58e9-0ccf-9de3f07af29f/8a42fca94861d5c0cd9b62ffc9c7adc7/Data/Car.png
+  Assets:
+    - !<FileTexture/de5f57cc-021d-44c4-9616-c192abf3f9ef>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1184
+        Height: 1182
+  SourceHash: 8a42fca94861d5c0cd9b62ffc9c7adc7
+  FileHash: 8142f07ed2f20dc700834f6fa8ba25c5
+  NativePackageItems:
+    []

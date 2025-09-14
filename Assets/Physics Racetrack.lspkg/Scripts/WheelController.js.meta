@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/552926a9-24b1-ed4b-fc0c-78b9814f9bc1>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> eacadbf1-9600-4955-b5e7-1a74ad0c6710
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> eacadbf1-9600-4955-b5e7-1a74ad0c6710
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: KM6lDqoPUPbeo8bUSxrkh
+  AssetDataMap:
+    JavaScriptAsset: !<own> fc9aa068-f4ec-4bf3-8e70-762f570d4917
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fc9aa068-f4ec-4bf3-8e70-762f570d4917>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 051321d9-f685-4c1b-910c-c770e7b79585
+  ExportUid: 09a7721e-e8c8-4ecc-4f63-3494590a783d
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    accelerationForce: false
+    car: false
+    draggable: false
+    maxSpeed: false
+    turnTorque: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - car: !<reference.BodyComponent> 00000000-0000-0000-0000-000000000000
+      accelerationForce: !<float> 1000.000000
+      turnTorque: !<float> 500.000000
+      maxSpeed: !<float> 50.000000
+      draggable: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
