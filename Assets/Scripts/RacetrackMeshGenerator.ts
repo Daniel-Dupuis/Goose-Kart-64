@@ -140,8 +140,8 @@ export class RacetrackMeshGenerator extends BaseScriptComponent {
 
     getColorFromHeight(height) {
         // Interpolate between brown (low) and green (high)
-        var brown = new vec4(0.6, 0.4, 0.2, 1.0);  // Brown color
-        var green = new vec4(0.2, 0.8, 0.3, 1.0);  // Green color
+        var brown = new vec4(0.0, 0.0, 0.0, 1.0);  // skyblue color
+        var green = new vec4(1, 1, 1, 1.0);  // Green color
         
         // Linear interpolation
         var r = brown.r + (green.r - brown.r) * height;
@@ -171,5 +171,11 @@ export class RacetrackMeshGenerator extends BaseScriptComponent {
             bottomRight, topLeft, topRight // Second Triangle
         ]);
         
+    }
+
+    getWorldXZFromTextureCoords(x, z): vec2 {
+        let wx = (x/this.textureHeight - 0.5) * this.scalePlane
+        let wz = (z/this.textureWidth - 0.5) * this.scalePlane
+        return new vec2(wx, wz)
     }
 }

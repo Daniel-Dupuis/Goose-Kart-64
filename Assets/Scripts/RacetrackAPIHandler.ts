@@ -30,7 +30,7 @@ export class RacetrackAPIHandler extends BaseScriptComponent {
                     for (let i = 0; i < parsed.racetracks.length; i++) {
                         let x = parsed.racetracks[i];
                         await this.fetchImageTextureById(x.id).then((tex) => {
-                            ret.push({name: x.name, img: tex, creator: x.username})
+                            ret.push({id: x.id, name: x.name, img: tex, creator: x.username, startpos: JSON.parse(x.start_pos)})
                         }).catch((e) => {
                             print("Uncaught error: " + e)
                         })

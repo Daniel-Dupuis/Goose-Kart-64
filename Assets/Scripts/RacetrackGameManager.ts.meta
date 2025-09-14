@@ -28,12 +28,15 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     goose: false
+    lastTime: false
     levelSelectButtonPrefab: false
     mainHUD: false
     openCloseButton: false
     rtapi: false
     sceneController: false
     selectionButtonGrid: false
+    startbox: false
+    stopwatch: false
     track: false
   ScriptTypesHidden:
     {}
@@ -48,6 +51,9 @@
       openCloseButton: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
       sceneController: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
       goose: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startbox: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
+      stopwatch: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      lastTime: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -60,3 +66,6 @@
     - // @input AssignableType_3 openCloseButton
     - // @input AssignableType_4 sceneController
     - // @input SceneObject goose
+    - // @input Component.ColliderComponent startbox
+    - // @input Component.Text stopwatch
+    - // @input Component.Text lastTime

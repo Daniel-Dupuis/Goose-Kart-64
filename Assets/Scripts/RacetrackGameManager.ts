@@ -35,10 +35,22 @@ export class RacetrackGameManager extends BaseScriptComponent {
     @input
     private goose: SceneObject
 
-    private gooseOrigin: vec3
+    @input
+    private startbox: ColliderComponent
+
+    @input
+    private stopwatch: Text
+
+    @input
+    private lastTime: Text
+
+    private timer: number
+
+    private currentMap: RacetrackType
 
     onAwake() {
         this.createEvent("OnStartEvent").bind(this.onStart.bind(this))
+        this.createEvent("UpdateEvent").bind(this.onUpdate.bind(this));
     }
 
     onStart() {
@@ -48,6 +60,11 @@ export class RacetrackGameManager extends BaseScriptComponent {
             });
         }
         this.reloadRacetracks();
+        this.startbox.onCollisionEnter.add(() => {
+            this.rtapi.submitRacetrackTime(this.currentMap.id, "ERN", this.timer)
+            this.lastTime.text = this.stopwatch.text
+            this.timer = 0;
+        })
     }
 
     reloadRacetracks() {
@@ -75,8 +92,20 @@ export class RacetrackGameManager extends BaseScriptComponent {
 
     loadRaceTrack(racetrack: RacetrackType) {
         this.track.texture = racetrack.img;
+        this.currentMap = racetrack;
         this.track.generateTerrainMesh();
+        let offset = this.track.getWorldXZFromTextureCoords(racetrack.startpos.x, racetrack.startpos.y)
         this.mainHUD.enabled = false;
         this.sceneController.resetPlacement();
+        let newpos = new vec3(offset.x, this.goose.getTransform().getWorldPosition().y, offset.y);
+        this.timer = 0;
+        this.startbox.getTransform().setLocalPosition(newpos)
+        //this.goose.getTransform().setLocalPosition(newpos)
+    }
+
+    onUpdate() {
+        if (!this.currentMap) return
+        this.stopwatch.text = this.timer.toFixed(2)
+        this.timer += getDeltaTime();
     }
 }
