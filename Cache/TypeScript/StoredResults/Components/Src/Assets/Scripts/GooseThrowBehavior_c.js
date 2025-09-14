@@ -16,6 +16,9 @@ function checkUndefined(property, showIfData) {
 // @input Component.AudioComponent audio
 // @input Asset.Material targetOutlineMaterial {"hint":"Material used to outline the object on hover (optional)"}
 // @input Component.RenderMeshVisual meshVisual
+// @input float overrideMass {"hint":"Optional: override physics mass. Leave 0 to keep existing mass/density from scene."}
+// @input int minHoldDurationMs = 120 {"hint":"Minimum time (ms) you must hold before release applies a throw. Prevents accidental flicks."}
+// @input Component.ScriptComponent drivingScript {"hint":"Optional: driving script component to disable while holding (e.g., WheelController)."}
 if (!global.BaseScriptComponent) {
     function BaseScriptComponent() {}
     global.BaseScriptComponent = BaseScriptComponent;
@@ -31,6 +34,8 @@ script.__initialize();
 let awakeEvent = script.createEvent("OnAwakeEvent");
 awakeEvent.bind(() => {
     checkUndefined("targetOutlineMaterial", []);
+    checkUndefined("overrideMass", []);
+    checkUndefined("minHoldDurationMs", []);
     if (script.onAwake) {
        script.onAwake();
     }

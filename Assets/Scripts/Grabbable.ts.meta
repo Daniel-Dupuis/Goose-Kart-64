@@ -28,6 +28,7 @@
   ScriptInputsHidden:
     collider: false
     handColliderName: false
+    proximityGrabRadius: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -35,9 +36,11 @@
   DefaultScriptInputs:
     - collider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
       handColliderName: ColliderTargetProvider
+      proximityGrabRadius: !<float> 15.000000
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input Component.ColliderComponent collider
     - '// @input string handColliderName = "ColliderTargetProvider"'
+    - '// @input float proximityGrabRadius {"hint":"If overlap cannot be detected, allow grab when hand is within this distance (cm) from the object. Set 0 to disable."}'

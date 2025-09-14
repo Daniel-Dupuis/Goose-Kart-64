@@ -17,6 +17,10 @@ export class Grabbable extends BaseScriptComponent {
     @input
     public handColliderName:string = "ColliderTargetProvider"
 
+    @input("float")
+    @hint('If overlap cannot be detected, allow grab when hand is within this distance (cm) from the object. Set 0 to disable.')
+    public proximityGrabRadius:number = 0;
+
     private gestureModule: GestureModule = require('LensStudio:GestureModule');
 
     public onGrabStartEvent:Event<Interactor> = new Event<Interactor>();
@@ -31,24 +35,8 @@ export class Grabbable extends BaseScriptComponent {
 
         print(`[Grabbable] onAwake on object: ${this.sceneObject.name}`);
 
-        // Prefer resolving collider directly from the object to avoid mis-assigned inputs
+        // Resolve collider directly from the object to avoid mis-assigned inputs
         this.collider = this.sceneObject.getComponent("ColliderComponent") as any;
-
-        // If no collider found in inputs or on object, create a reasonable default
-        // If no collider found in inputs or on object, create a reasonable default
-        if (!this.collider) {
-            print(`[Grabbable] No ColliderComponent found. Creating a default Box collider (FitVisual=true).`);
-            try {
-                const created = this.sceneObject.createComponent("ColliderComponent") as ColliderComponent;
-                // Default to Box fit to visual if possible
-                // Note: Shape will default to Box; FitVisual true helps approximate the mesh
-                // For complex meshes, you may customize in the Editor
-                (created.shape as any).fitVisual = true;
-                this.collider = created;
-            } catch (e) {
-                print(`[Grabbable] Failed to create ColliderComponent: ${e}`);
-            }
-        }
 
         // Validate collider type has expected API
         if (!this.collider || !(this.collider as any).onOverlapEnter) {
@@ -56,12 +44,19 @@ export class Grabbable extends BaseScriptComponent {
             return;
         }
 
-        // Configure overlap to include intangible (hands can be intangible)
+        // Configure overlap to include intangible (hands can be intangible) and both dynamic/static
         this.collider.overlapFilter.includeIntangible = true;
+        if ((this.collider.overlapFilter as any).includeDynamic !== undefined) {
+            (this.collider.overlapFilter as any).includeDynamic = true;
+        }
+        if ((this.collider.overlapFilter as any).includeStatic !== undefined) {
+            (this.collider.overlapFilter as any).includeStatic = true;
+        }
+        // Do not auto-toggle ShowCollider here; leave visualization to the scene setup
         this.collider.onOverlapEnter.add(this.onOverlapEnter.bind(this));
         this.collider.onOverlapExit.add(this.onOverlapExit.bind(this));
 
-        print(`[Grabbable] Using handColliderName='${this.handColliderName}'. Waiting for overlap with that object name.`);
+        print(`[Grabbable] Using handColliderName='${this.handColliderName}'. Waiting for overlap with that object name. proximityGrabRadius=${this.proximityGrabRadius}`);
 
         this.gestureModule.getGrabBeginEvent(GestureModule.HandType.Right)
             .add((GrabBeginArgs) => this.onGrabBegin(InteractionManager.getInstance().getInteractorsByType(InteractorInputType.RightHand)[0]));
@@ -78,11 +73,19 @@ export class Grabbable extends BaseScriptComponent {
     }
 
     onOverlapEnter (e:OverlapEnterEventArgs) {
-        const otherName = e.overlap.collider.getSceneObject().name;
+        const otherSo = e.overlap.collider.getSceneObject();
+        const otherName = otherSo.name;
         print(`[Grabbable] onOverlapEnter with '${otherName}'`);
-        if (otherName == this.handColliderName) {
+        const wildcard = this.handColliderName === '*';
+        const exactMatch = otherName === this.handColliderName;
+        const relaxedMatch = otherName.indexOf('Collider') >= 0 || otherName.indexOf('Hand') >= 0;
+
+        if (wildcard || exactMatch || relaxedMatch) {
             if (!this.isHandOverlapping) { this.onHoverStartEvent.invoke() }
             this.isHandOverlapping = true;
+            if (!exactMatch && !wildcard) {
+                print(`[Grabbable] TIP: Consider setting handColliderName='${otherName}' for stricter matching.`);
+            }
         } else {
             // Helpful guidance if name doesn't match
             print(`[Grabbable] Overlap ignored: expected handColliderName '${this.handColliderName}', got '${otherName}'.`);
@@ -92,7 +95,10 @@ export class Grabbable extends BaseScriptComponent {
     onOverlapExit (e:OverlapExitEventArgs) {
         const otherName = e.overlap.collider.getSceneObject().name;
         print(`[Grabbable] onOverlapExit with '${otherName}'`);
-        if (otherName == this.handColliderName) {
+        const wildcard = this.handColliderName === '*';
+        const exactMatch = otherName === this.handColliderName;
+        const relaxedMatch = otherName.indexOf('Collider') >= 0 || otherName.indexOf('Hand') >= 0;
+        if (wildcard || exactMatch || relaxedMatch) {
             if (this.isHandOverlapping) { this.onHoverEndEvent.invoke() }
             this.isHandOverlapping = false;
         }
@@ -104,6 +110,23 @@ export class Grabbable extends BaseScriptComponent {
             this.isGrabbed = true;
             this.onGrabStartEvent.invoke(interactor);
         } else {
+            // Proximity fallback: if within radius, allow grab anyway
+            try {
+                const handInputData = SIK.HandInputData;
+                const hand = handInputData.getHand(interactor.inputType == InteractorInputType.LeftHand ? 'left' : 'right');
+                const handPos = hand?.indexKnuckle?.position ?? hand?.wrist?.position;
+                const objPos = this.sceneObject.getTransform().getWorldPosition();
+                const dist = handPos ? handPos.distance(objPos) : Number.MAX_VALUE;
+                print(`[Grabbable] Proximity check: dist=${dist?.toFixed ? dist.toFixed(2) : dist}cm, radius=${this.proximityGrabRadius}`);
+                if (this.proximityGrabRadius > 0 && dist < this.proximityGrabRadius) {
+                    this.isGrabbed = true;
+                    print(`[Grabbable] Proximity within radius. Forcing grab start.`);
+                    this.onGrabStartEvent.invoke(interactor);
+                    return;
+                }
+            } catch (e) {
+                print(`[Grabbable] Proximity check failed: ${e}`);
+            }
             print(`[Grabbable] Grab begin ignored because hand is not overlapping. Check collider and handColliderName.`);
         }
     }

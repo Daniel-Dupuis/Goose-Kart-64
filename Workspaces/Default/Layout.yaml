@@ -6,8 +6,6 @@ dock:
           - items:
               - persistentName: Snap.Plugin.Gui.SceneHierarchyEditor
                 Uuid: 6778142c-0629-4c2a-afc3-92a65ce29e1a
-              - persistentName: Com.Snap.Bitmoji.BitmojiSuite
-                Uuid: 58708869-4432-47a7-b7a8-5f7653ddad73
             type: section
             current: 0
           - items:
@@ -29,13 +27,11 @@ dock:
           - items:
               - persistentName: Snap.Plugin.Gui.LoggerPanel
                 Uuid: 81de965d-0c94-4d28-82cf-901740003a1f
-              - persistentName: Snap.Plugin.Gui.ScriptEditor
-                Uuid: e580df0b-1dc6-4c8c-9fed-da6631535f57
             type: section
             current: 0
         sizes:
-          - 490
-          - 227
+          - 433
+          - 284
         type: splitter
         orientation: vertical
       - items:
@@ -52,8 +48,8 @@ dock:
         current: 0
     sizes:
       - 652
-      - 521
-      - 294
-      - 52
+      - 500
+      - 325
+      - 42
     type: splitter
     orientation: horizontal

@@ -69,6 +69,9 @@ let GooseThrowBehavior = (() => {
             this.audio = this.audio;
             this.targetOutlineMaterial = this.targetOutlineMaterial;
             this.meshVisual = this.meshVisual;
+            this.overrideMass = this.overrideMass;
+            this.minHoldDurationMs = this.minHoldDurationMs;
+            this.drivingScript = this.drivingScript;
             // Hand input
             this.handInputData = SIK_1.SIK.HandInputData;
             this.hand = this.handInputData.getHand('right');
@@ -77,9 +80,11 @@ let GooseThrowBehavior = (() => {
             this.accumulatedForce = vec3.zero();
             this.prevHandVelocity = vec3.zero();
             // Tunables (heavier than the tennis ball)
-            this.OBJECT_MASS = 4.0; // approximate mass for the goose car in scene units
+            this.OBJECT_MASS = 4.0; // legacy default; only used if overrideMass > 0
             this.HAND_ACCELERATION_MULTIPLIER = 0.05; // slightly reduced to account for heavier object
             this.HAND_BASE_VELOCITY_MULTIPLIER = 0.5;
+            // Timing & state
+            this.holdStartTime = 0;
         }
         __initialize() {
             super.__initialize();
@@ -87,6 +92,9 @@ let GooseThrowBehavior = (() => {
             this.audio = this.audio;
             this.targetOutlineMaterial = this.targetOutlineMaterial;
             this.meshVisual = this.meshVisual;
+            this.overrideMass = this.overrideMass;
+            this.minHoldDurationMs = this.minHoldDurationMs;
+            this.drivingScript = this.drivingScript;
             // Hand input
             this.handInputData = SIK_1.SIK.HandInputData;
             this.hand = this.handInputData.getHand('right');
@@ -95,9 +103,11 @@ let GooseThrowBehavior = (() => {
             this.accumulatedForce = vec3.zero();
             this.prevHandVelocity = vec3.zero();
             // Tunables (heavier than the tennis ball)
-            this.OBJECT_MASS = 4.0; // approximate mass for the goose car in scene units
+            this.OBJECT_MASS = 4.0; // legacy default; only used if overrideMass > 0
             this.HAND_ACCELERATION_MULTIPLIER = 0.05; // slightly reduced to account for heavier object
             this.HAND_BASE_VELOCITY_MULTIPLIER = 0.5;
+            // Timing & state
+            this.holdStartTime = 0;
         }
         onAwake() {
             var _a;
@@ -118,9 +128,21 @@ let GooseThrowBehavior = (() => {
             if (this.audio) {
                 this.audio.playbackMode = Audio.PlaybackMode.LowLatency;
             }
-            // Configure physics
-            this.physicsBody.mass = this.OBJECT_MASS;
-            print(`[GooseThrow] Physics configured. mass=${this.physicsBody.mass}`);
+            // Ensure driving is enabled on start
+            if (this.drivingScript) {
+                try {
+                    this.drivingScript.enabled = true;
+                }
+                catch (e) { }
+            }
+            // Configure physics (optional mass override)
+            if (this.overrideMass && this.overrideMass > 0) {
+                this.physicsBody.mass = this.overrideMass;
+                print(`[GooseThrow] Physics configured. mass overridden to ${this.physicsBody.mass}`);
+            }
+            else {
+                print(`[GooseThrow] Physics configured. Using existing mass from scene: ${this.physicsBody.mass}`);
+            }
             // Hover highlight setup
             if (this.targetOutlineMaterial) {
                 this.highlightMaterial = this.targetOutlineMaterial.clone();
@@ -132,6 +154,32 @@ let GooseThrowBehavior = (() => {
             this.grabbable.onGrabEndEvent.add(this.onGrabEnd.bind(this));
             this.createEvent("UpdateEvent").bind(this.onUpdate.bind(this));
             this.t = target.getTransform();
+        }
+        onDisable() {
+            // Safety restore to prevent stuck states
+            try {
+                if (this.physicsBody) {
+                    this.physicsBody.intangible = false;
+                    this.physicsBody.dynamic = true;
+                }
+                if (this.drivingScript) {
+                    this.drivingScript.enabled = true;
+                }
+            }
+            catch (e) { }
+        }
+        onDestroy() {
+            // Safety restore to prevent stuck states
+            try {
+                if (this.physicsBody) {
+                    this.physicsBody.intangible = false;
+                    this.physicsBody.dynamic = true;
+                }
+                if (this.drivingScript) {
+                    this.drivingScript.enabled = true;
+                }
+            }
+            catch (e) { }
         }
         onGrabStart(interactor) {
             print(`[GooseThrow] onGrabStart. Interactor inputType=${interactor === null || interactor === void 0 ? void 0 : interactor.inputType}`);
@@ -154,6 +202,22 @@ let GooseThrowBehavior = (() => {
             this.physicsBody.intangible = true; // avoid physics interference while held
             this.physicsBody.dynamic = false;
             print(`[GooseThrow] Holding. physicsBody: intangible=${this.physicsBody.intangible}, dynamic=${this.physicsBody.dynamic}`);
+            // Zero any existing motion while grabbing
+            if (this.physicsBody.velocity) {
+                this.physicsBody.velocity = vec3.zero();
+            }
+            if (this.physicsBody.angularVelocity) {
+                this.physicsBody.angularVelocity = vec3.zero();
+            }
+            // Mark hold start time and disable driving if provided
+            this.holdStartTime = getTime();
+            if (this.drivingScript) {
+                try {
+                    this.drivingScript.enabled = false;
+                    print('[GooseThrow] Disabled driving script while holding.');
+                }
+                catch (e) { }
+            }
             this.prevHandVelocity = vec3.zero();
             this.accumulatedForce = vec3.zero();
             this.isHolding = true;
@@ -164,14 +228,39 @@ let GooseThrowBehavior = (() => {
             // Re-enable physics
             this.physicsBody.intangible = false;
             this.physicsBody.dynamic = true;
-            // Apply throw velocity
-            let baseVelocity = this.getHandVelocity().uniformScale(this.HAND_BASE_VELOCITY_MULTIPLIER);
-            const finalVel = baseVelocity.add(this.accumulatedForce);
-            this.physicsBody.velocity = finalVel;
-            print(`[GooseThrow] Applied throw. baseVel=${(_b = (_a = baseVelocity.toString) === null || _a === void 0 ? void 0 : _a.call(baseVelocity)) !== null && _b !== void 0 ? _b : baseVelocity} accum=${(_e = (_d = (_c = this.accumulatedForce).toString) === null || _d === void 0 ? void 0 : _d.call(_c)) !== null && _e !== void 0 ? _e : this.accumulatedForce} final=${(_g = (_f = finalVel.toString) === null || _f === void 0 ? void 0 : _f.call(finalVel)) !== null && _g !== void 0 ? _g : finalVel}`);
+            // Decide whether to apply throw based on hold duration
+            const dtMs = (getTime() - this.holdStartTime) * 1000.0;
+            if (dtMs >= this.minHoldDurationMs) {
+                // Apply throw velocity, with a clamp to prevent runaway launches
+                let baseVelocity = this.getHandVelocity().uniformScale(this.HAND_BASE_VELOCITY_MULTIPLIER);
+                const finalVel = baseVelocity.add(this.accumulatedForce);
+                const maxThrowSpeed = 2000; // cm/s cap to prevent explosions
+                const finalLen = finalVel.length;
+                const clamped = finalLen && finalLen > maxThrowSpeed ? finalVel.normalize().uniformScale(maxThrowSpeed) : finalVel;
+                this.physicsBody.velocity = clamped;
+                print(`[GooseThrow] Applied throw. hold=${Math.floor(dtMs)}ms base=${(_b = (_a = baseVelocity.toString) === null || _a === void 0 ? void 0 : _a.call(baseVelocity)) !== null && _b !== void 0 ? _b : baseVelocity} accum=${(_e = (_d = (_c = this.accumulatedForce).toString) === null || _d === void 0 ? void 0 : _d.call(_c)) !== null && _e !== void 0 ? _e : this.accumulatedForce} final=${(_g = (_f = clamped.toString) === null || _f === void 0 ? void 0 : _f.call(clamped)) !== null && _g !== void 0 ? _g : clamped}`);
+            }
+            else {
+                // Too short: treat as tap, do not throw
+                if (this.physicsBody.velocity) {
+                    this.physicsBody.velocity = vec3.zero();
+                }
+                if (this.physicsBody.angularVelocity) {
+                    this.physicsBody.angularVelocity = vec3.zero();
+                }
+                print(`[GooseThrow] Release ignored (held ${Math.floor(dtMs)}ms < ${this.minHoldDurationMs}ms). No throw applied.`);
+            }
             this.isHolding = false;
             this.prevHandVelocity = vec3.zero();
             this.accumulatedForce = vec3.zero();
+            // Re-enable driving if provided
+            if (this.drivingScript) {
+                try {
+                    this.drivingScript.enabled = true;
+                    print('[GooseThrow] Re-enabled driving script after release.');
+                }
+                catch (e) { }
+            }
         }
         addMaterialToRenderMeshArray() {
             if (!this.meshVisual || !this.highlightMaterial) {
@@ -219,6 +308,13 @@ let GooseThrowBehavior = (() => {
                 this.t.setWorldPosition(nPos);
                 let nRot = this.getDeltaHandRot().multiply(this.initialTRot);
                 this.t.setWorldRotation(nRot);
+                // Keep velocities zero while held
+                if (this.physicsBody.velocity) {
+                    this.physicsBody.velocity = vec3.zero();
+                }
+                if (this.physicsBody.angularVelocity) {
+                    this.physicsBody.angularVelocity = vec3.zero();
+                }
             }
             let handVelocity = this.getHandVelocity();
             // Debug velocity magnitude to ensure tracking

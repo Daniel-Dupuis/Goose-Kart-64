@@ -27,20 +27,32 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     audio: false
+    drivingScript: false
     meshVisual: false
+    minHoldDurationMs: false
+    overrideMass: false
+    targetObject: false
     targetOutlineMaterial: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - audio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+    - targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      audio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       targetOutlineMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       meshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      overrideMass: !<float> 0.000000
+      minHoldDurationMs: 120
+      drivingScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
+    - // @input SceneObject targetObject
     - // @input Component.AudioComponent audio
     - '// @input Asset.Material targetOutlineMaterial {"hint":"Material used to outline the object on hover (optional)"}'
     - // @input Component.RenderMeshVisual meshVisual
+    - '// @input float overrideMass {"hint":"Optional: override physics mass. Leave 0 to keep existing mass/density from scene."}'
+    - '// @input int minHoldDurationMs = 120 {"hint":"Minimum time (ms) you must hold before release applies a throw. Prevents accidental flicks."}'
+    - '// @input Component.ScriptComponent drivingScript {"hint":"Optional: driving script component to disable while holding (e.g., WheelController)."}'

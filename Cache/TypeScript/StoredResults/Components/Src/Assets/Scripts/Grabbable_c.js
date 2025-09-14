@@ -14,6 +14,7 @@ function checkUndefined(property, showIfData) {
 }
 // @input Component.ColliderComponent collider
 // @input string handColliderName = "ColliderTargetProvider"
+// @input float proximityGrabRadius {"hint":"If overlap cannot be detected, allow grab when hand is within this distance (cm) from the object. Set 0 to disable."}
 if (!global.BaseScriptComponent) {
     function BaseScriptComponent() {}
     global.BaseScriptComponent = BaseScriptComponent;
@@ -29,6 +30,7 @@ script.__initialize();
 let awakeEvent = script.createEvent("OnAwakeEvent");
 awakeEvent.bind(() => {
     checkUndefined("handColliderName", []);
+    checkUndefined("proximityGrabRadius", []);
     if (script.onAwake) {
        script.onAwake();
     }

@@ -1,0 +1,43 @@
+- !<AssetImportMetadata/80ec487d-dbbc-4314-8979-d2d2c4493d4b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 76184ae8-9c30-43d3-a63d-eb8cdde87410
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 76184ae8-9c30-43d3-a63d-eb8cdde87410
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 8de69d1a-1333-4103-8fb1-d2f6e58fb6c5
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/8de69d1a-1333-4103-8fb1-d2f6e58fb6c5>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 9c1fccb8-fc53-46f3-80c1-f524cc101a07
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    hand: false
+    radius: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - hand: 0
+      radius: !<float> 3.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input int hand {"widget":"combobox", "values":[{"label":"Right", "value":0}, {"label":"Left", "value":1}]}'
+    - // @input float radius = 3

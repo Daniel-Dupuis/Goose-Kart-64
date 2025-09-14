@@ -31,6 +31,19 @@ export class GooseThrowBehavior extends BaseScriptComponent {
     @allowUndefined
     public meshVisual: RenderMeshVisual;
 
+    @input("float")
+    @hint('Optional: override physics mass. Leave 0 to keep existing mass/density from scene.')
+    public overrideMass: number = 0;
+
+    @input("int")
+    @hint('Minimum time (ms) you must hold before release applies a throw. Prevents accidental flicks.')
+    public minHoldDurationMs: number = 120;
+
+    @input
+    @allowUndefined
+    @hint('Optional: driving script component to disable while holding (e.g., WheelController).')
+    public drivingScript: ScriptComponent;
+
     // Physics
     physicsBody: BodyComponent;
 
@@ -47,7 +60,7 @@ export class GooseThrowBehavior extends BaseScriptComponent {
     private prevHandVelocity: vec3 = vec3.zero();
 
     // Tunables (heavier than the tennis ball)
-    protected OBJECT_MASS = 4.0; // approximate mass for the goose car in scene units
+    protected OBJECT_MASS = 4.0; // legacy default; only used if overrideMass > 0
     protected HAND_ACCELERATION_MULTIPLIER = 0.05; // slightly reduced to account for heavier object
     protected HAND_BASE_VELOCITY_MULTIPLIER = 0.5;
 
@@ -59,6 +72,9 @@ export class GooseThrowBehavior extends BaseScriptComponent {
     initialTPos: vec3;
     initialHandRot: quat;
     initialTRot: quat;
+
+    // Timing & state
+    private holdStartTime: number = 0;
 
     onAwake() {
         const target = this.targetObject ?? this.sceneObject;
@@ -81,9 +97,18 @@ export class GooseThrowBehavior extends BaseScriptComponent {
             this.audio.playbackMode = Audio.PlaybackMode.LowLatency;
         }
 
-        // Configure physics
-        this.physicsBody.mass = this.OBJECT_MASS;
-        print(`[GooseThrow] Physics configured. mass=${this.physicsBody.mass}`);
+        // Ensure driving is enabled on start
+        if (this.drivingScript) {
+            try { this.drivingScript.enabled = true; } catch (e) {}
+        }
+
+        // Configure physics (optional mass override)
+        if (this.overrideMass && this.overrideMass > 0) {
+            this.physicsBody.mass = this.overrideMass;
+            print(`[GooseThrow] Physics configured. mass overridden to ${this.physicsBody.mass}`);
+        } else {
+            print(`[GooseThrow] Physics configured. Using existing mass from scene: ${this.physicsBody.mass}`);
+        }
 
         // Hover highlight setup
         if (this.targetOutlineMaterial) {
@@ -99,6 +124,22 @@ export class GooseThrowBehavior extends BaseScriptComponent {
         this.createEvent("UpdateEvent").bind(this.onUpdate.bind(this));
 
         this.t = target.getTransform();
+    }
+
+    onDisable() {
+        // Safety restore to prevent stuck states
+        try {
+            if (this.physicsBody) { this.physicsBody.intangible = false; this.physicsBody.dynamic = true; }
+            if (this.drivingScript) { this.drivingScript.enabled = true; }
+        } catch (e) {}
+    }
+
+    onDestroy() {
+        // Safety restore to prevent stuck states
+        try {
+            if (this.physicsBody) { this.physicsBody.intangible = false; this.physicsBody.dynamic = true; }
+            if (this.drivingScript) { this.drivingScript.enabled = true; }
+        } catch (e) {}
     }
 
     onGrabStart(interactor: Interactor) {
@@ -130,6 +171,16 @@ export class GooseThrowBehavior extends BaseScriptComponent {
         this.physicsBody.dynamic = false;
         print(`[GooseThrow] Holding. physicsBody: intangible=${this.physicsBody.intangible}, dynamic=${this.physicsBody.dynamic}`);
 
+        // Zero any existing motion while grabbing
+        if ((this.physicsBody as any).velocity) { (this.physicsBody as any).velocity = vec3.zero(); }
+        if ((this.physicsBody as any).angularVelocity) { (this.physicsBody as any).angularVelocity = vec3.zero(); }
+
+        // Mark hold start time and disable driving if provided
+        this.holdStartTime = getTime();
+        if (this.drivingScript) {
+            try { this.drivingScript.enabled = false; print('[GooseThrow] Disabled driving script while holding.'); } catch (e) {}
+        }
+
         this.prevHandVelocity = vec3.zero();
         this.accumulatedForce = vec3.zero();
         this.isHolding = true;
@@ -141,15 +192,32 @@ export class GooseThrowBehavior extends BaseScriptComponent {
         this.physicsBody.intangible = false;
         this.physicsBody.dynamic = true;
 
-        // Apply throw velocity
-        let baseVelocity = this.getHandVelocity().uniformScale(this.HAND_BASE_VELOCITY_MULTIPLIER);
-        const finalVel = baseVelocity.add(this.accumulatedForce);
-        this.physicsBody.velocity = finalVel;
-        print(`[GooseThrow] Applied throw. baseVel=${baseVelocity.toString?.() ?? baseVelocity} accum=${this.accumulatedForce.toString?.() ?? this.accumulatedForce} final=${finalVel.toString?.() ?? finalVel}`);
+        // Decide whether to apply throw based on hold duration
+        const dtMs = (getTime() - this.holdStartTime) * 1000.0;
+        if (dtMs >= this.minHoldDurationMs) {
+            // Apply throw velocity, with a clamp to prevent runaway launches
+            let baseVelocity = this.getHandVelocity().uniformScale(this.HAND_BASE_VELOCITY_MULTIPLIER);
+            const finalVel = baseVelocity.add(this.accumulatedForce);
+            const maxThrowSpeed = 2000; // cm/s cap to prevent explosions
+            const finalLen = (finalVel as any).length;
+            const clamped = finalLen && finalLen > maxThrowSpeed ? finalVel.normalize().uniformScale(maxThrowSpeed) : finalVel;
+            this.physicsBody.velocity = clamped;
+            print(`[GooseThrow] Applied throw. hold=${Math.floor(dtMs)}ms base=${baseVelocity.toString?.() ?? baseVelocity} accum=${this.accumulatedForce.toString?.() ?? this.accumulatedForce} final=${clamped.toString?.() ?? clamped}`);
+        } else {
+            // Too short: treat as tap, do not throw
+            if ((this.physicsBody as any).velocity) { (this.physicsBody as any).velocity = vec3.zero(); }
+            if ((this.physicsBody as any).angularVelocity) { (this.physicsBody as any).angularVelocity = vec3.zero(); }
+            print(`[GooseThrow] Release ignored (held ${Math.floor(dtMs)}ms < ${this.minHoldDurationMs}ms). No throw applied.`);
+        }
 
         this.isHolding = false;
         this.prevHandVelocity = vec3.zero();
         this.accumulatedForce = vec3.zero();
+
+        // Re-enable driving if provided
+        if (this.drivingScript) {
+            try { this.drivingScript.enabled = true; print('[GooseThrow] Re-enabled driving script after release.'); } catch (e) {}
+        }
     }
 
     private addMaterialToRenderMeshArray() {
@@ -194,6 +262,9 @@ export class GooseThrowBehavior extends BaseScriptComponent {
             this.t.setWorldPosition(nPos);
             let nRot = this.getDeltaHandRot().multiply(this.initialTRot);
             this.t.setWorldRotation(nRot);
+            // Keep velocities zero while held
+            if ((this.physicsBody as any).velocity) { (this.physicsBody as any).velocity = vec3.zero(); }
+            if ((this.physicsBody as any).angularVelocity) { (this.physicsBody as any).angularVelocity = vec3.zero(); }
         }
 
         let handVelocity = this.getHandVelocity();

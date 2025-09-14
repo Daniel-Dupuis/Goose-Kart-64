@@ -8,9 +8,6 @@
   NativePackageItems:
     - !<own> fd0f6391-674f-edec-f2ba-fefa3d7fef3f
     - !<own> cb4f7a9e-b896-1570-800b-e099938b368c
-    - !<own> c98f8ec2-9c55-e8a8-d705-dc48b9fbfecb
-    - !<own> d6a920b7-6875-56c5-fce5-36f023a1c6a6
-    - !<own> f6f43901-2d78-0827-50b8-87380125d5f8
     - !<own> 7c89dbee-5ece-cee5-798c-aa88d4aa9732
     - !<own> 0eb6d59e-5ab7-b083-3f2c-a09102284d09
     - !<own> 89c0d35c-b85e-a33c-3143-09a8c4e65b43
@@ -243,22 +240,6 @@
       {}
   InputLines:
     []
-- !<AssetImportMetadata/c98f8ec2-9c55-e8a8-d705-dc48b9fbfecb>
-  ImportedAssetIds:
-    BluetoothCentralModule: !<reference> cf287a42-94fd-4fc2-b421-8aa77587cba7
-  ImporterName: BluetoothCentralModuleImporter
-  PrimaryAsset: !<reference> cf287a42-94fd-4fc2-b421-8aa77587cba7
-  PackageType: NotAPackage
-  LegacyPackagePolicy: ~
-  ExtraData:
-    {}
-  AssetDataMap:
-    {}
-  DependentFiles:
-    []
-  ImporterSettings: !<AssetImporterSettings>
-    {}
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<AssetImportMetadata/cb4f7a9e-b896-1570-800b-e099938b368c>
   ImportedAssetIds:
     TypeScriptAsset: !<reference> 8a258d24-ea14-4832-afb3-8086a82c883e
@@ -300,22 +281,6 @@
       {}
   InputLines:
     []
-- !<AssetImportMetadata/d6a920b7-6875-56c5-fce5-36f023a1c6a6>
-  ImportedAssetIds:
-    NativePackageDescriptor: !<reference> ba8b93c8-cfd7-4b0d-9525-9f5b13df52b3
-  ImporterName: NativePackageDescriptorImporter
-  PrimaryAsset: !<reference> ba8b93c8-cfd7-4b0d-9525-9f5b13df52b3
-  PackageType: NotAPackage
-  LegacyPackagePolicy: ~
-  ExtraData:
-    {}
-  AssetDataMap:
-    {}
-  DependentFiles:
-    []
-  ImporterSettings: !<AssetImporterSettings>
-    {}
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/d985041d-942f-4979-b710-66e8aadbc8db>
   SvgIcon: ""
   SetupScript:
@@ -341,22 +306,6 @@
       {}
   InputLines:
     []
-- !<AssetImportMetadata/f6f43901-2d78-0827-50b8-87380125d5f8>
-  ImportedAssetIds:
-    MarkdownAsset: !<reference> 2fc12020-a3fc-4575-ac29-93f91e9bfb63
-  ImporterName: MarkdownAssetImporter
-  PrimaryAsset: !<reference> 2fc12020-a3fc-4575-ac29-93f91e9bfb63
-  PackageType: NotAPackage
-  LegacyPackagePolicy: ~
-  ExtraData:
-    {}
-  AssetDataMap:
-    {}
-  DependentFiles:
-    []
-  ImporterSettings: !<AssetImporterSettings>
-    {}
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<AssetImportMetadata/fd0f6391-674f-edec-f2ba-fefa3d7fef3f>
   ImportedAssetIds:
     TypeScriptAsset: !<reference> 1e059c6d-776f-469d-9b89-af0d40df48e2
